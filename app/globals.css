@@ -1,0 +1,60 @@
+@import 'tailwindcss';
+
+@theme inline {
+  --color-background: var(--background);
+  --color-background-alt: var(--background-alt);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-border: var(--card-border);
+  --color-purple: var(--purple);
+  --color-purple-light: var(--purple-light);
+  --color-pink: var(--pink);
+  --color-dim: var(--text-dim);
+  --color-faint: var(--text-faint);
+
+  --font-sans: var(--font-inter), sans-serif;
+  --font-display: var(--font-space-grotesk), sans-serif;
+
+  --radius-card: 14px;
+}
+
+:root {
+  color-scheme: dark;
+  --background: #0a0611;
+  --background-alt: #0d0817;
+  --card: #150c26;
+  --card-border: rgba(168, 85, 247, 0.22);
+  --purple: #9333ea;
+  --purple-light: #a78bfa;
+  --pink: #ec4899;
+  --foreground: #f3eefc;
+  --text-dim: #a99cc0;
+  --text-faint: #6f6485;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  line-height: 1.6;
+  overflow-x: hidden;
+  font-family: var(--font-inter), sans-serif;
+}
+
+.grad-text {
+  background: linear-gradient(90deg, var(--purple-light), var(--pink));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.grad-bg {
+  background: linear-gradient(90deg, var(--purple-light), var(--pink));
+}
