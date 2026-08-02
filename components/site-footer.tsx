@@ -1,3 +1,7 @@
+'use client'
+
+import { useState } from 'react'
+import { X } from 'lucide-react'
 import { Eyebrow } from './section-head'
 
 const CONTACTS = [
@@ -6,7 +10,11 @@ const CONTACTS = [
   { icon: '◎', text: 'Malolos City, Bulacan, Philippines', href: null },
 ]
 
+const CALENDAR_URL = 'https://calendar.app.google/uGboPxZ85sW2tMBa9'
+
 export function SiteFooter() {
+  const [isCalendarOpen, setIsCalendarOpen] = useState(false)
+
   return (
     <footer id="contact" className="border-t border-border bg-background-alt pb-[30px] pt-[80px]">
       <div className="mx-auto max-w-[1200px] px-8">
@@ -20,12 +28,13 @@ export function SiteFooter() {
               Whether you need a website, funnel, CRM automation, or a complete GoHighLevel setup, I&apos;d love to help
               bring your project to life.
             </p>
-            <a
-              href="mailto:shielamhaymacapagal@gmail.com"
+            <button
+              type="button"
+              onClick={() => setIsCalendarOpen(true)}
               className="grad-bg inline-block rounded-md px-[26px] py-[14px] font-display text-[12px] font-semibold uppercase tracking-[0.14em] text-white transition hover:-translate-y-px hover:brightness-110"
             >
               Schedule a Discovery Call
-            </a>
+            </button>
           </div>
 
           <ul className="flex list-none flex-col gap-4">
@@ -58,6 +67,49 @@ export function SiteFooter() {
           <div>GoHighLevel Expert • Build. Automate. Scale.</div>
         </div>
       </div>
+
+      {isCalendarOpen && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 p-4"
+          onClick={() => setIsCalendarOpen(false)}
+        >
+          <div
+            className="relative flex h-[85vh] w-full max-w-[900px] flex-col overflow-hidden rounded-lg border border-border bg-background-alt"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="flex items-center justify-between border-b border-border px-5 py-3">
+              <span className="font-display text-[13px] font-semibold uppercase tracking-[0.1em] text-foreground">
+                Schedule a Discovery Call
+              </span>
+              <button
+                type="button"
+                onClick={() => setIsCalendarOpen(false)}
+                aria-label="Close calendar"
+                className="flex h-8 w-8 items-center justify-center rounded-full text-dim transition-colors hover:bg-border hover:text-foreground"
+              >
+                <X size={18} />
+              </button>
+            </div>
+            <iframe
+              src={CALENDAR_URL}
+              title="Book a discovery call"
+              className="h-full w-full flex-1 border-0"
+            />
+            <div className="border-t border-border px-5 py-2 text-center text-[12px] text-faint">
+              Having trouble viewing the calendar?{' '}
+              
+                href={CALENDAR_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-pink underline hover:text-foreground"
+              >
+                Open it in a new tab
+              </a>
+              .
+            </div>
+          </div>
+        </div>
+      )}
     </footer>
   )
 }
