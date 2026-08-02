@@ -20,12 +20,7 @@ export function SiteFooter() {
               Whether you need a website, funnel, CRM automation, or a complete GoHighLevel setup, I&apos;d love to help
               bring your project to life.
             </p>
-            
-              href="https://calendar.app.google/uGboPxZ85sW2tMBa9"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="grad-bg inline-block rounded-md px-[26px] py-[14px] font-display text-[12px] font-semibold uppercase tracking-[0.14em] text-white transition hover:-translate-y-px hover:brightness-110"
-            >
+            <a href="https://calendar.app.google/uGboPxZ85sW2tMBa9" target="_blank" rel="noopener noreferrer" className="grad-bg inline-block rounded-md px-[26px] py-[14px] font-display text-[12px] font-semibold uppercase tracking-[0.14em] text-white transition hover:-translate-y-px hover:brightness-110">
               Schedule a Discovery Call
             </a>
           </div>
