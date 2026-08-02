@@ -98,7 +98,7 @@ export function SiteFooter() {
             <div className="border-t border-border px-5 py-2 text-center text-[12px] text-faint">
               Having trouble viewing the calendar?{' '}
               
-                href={CALENDAR_URL}
+                <a href={CALENDAR_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-pink underline hover:text-foreground"
