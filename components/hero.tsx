@@ -58,8 +58,13 @@ className="block h-auto w-full"
 />
 </div>
 <div className="absolute -right-[18px] bottom-6 z-[2] border border-purple-light bg-[rgba(10,6,17,0.75)] px-[18px] py-4 text-center backdrop-blur-[6px]">
-<div className="grad-text font-display text-[20px] font-bold tracking-[0.3em]">SHL</div>
-<div className="mt-1 font-display text-[9px] tracking-[0.18em] text-faint">SINCE 2026</div>
+<Image
+src="/shl-logo.png"
+alt="SHL - Since 2026"
+width={140}
+height={108}
+className="h-14 w-auto"
+/>
 </div>
 </div>
 </div>
