@@ -20,7 +20,7 @@ export function SiteHeader() {
     <header className="sticky top-0 z-50 border-b border-border bg-[rgba(10,6,17,0.82)] backdrop-blur-[14px]">
       <div className="mx-auto flex max-w-[1200px] items-center justify-between px-8 py-[18px]">
         <a href="#home" className="flex items-center">
-          <Image src="/shl-logo.png" alt="SHL - Since 2026" width={140} height={108} className="h-10 w-auto" priority />
+                    <Image src="/shl-logo.png" alt="SHL - Since 2026" width={168} height={130} className="h-14 w-auto" priority />
         </a>
 
         <nav className="hidden md:block" aria-label="Primary">
