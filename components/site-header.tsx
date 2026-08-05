@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Image from 'next/image'
 
 const NAV_LINKS = [
   { href: '#home', label: 'Home' },
@@ -18,9 +19,8 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-[rgba(10,6,17,0.82)] backdrop-blur-[14px]">
       <div className="mx-auto flex max-w-[1200px] items-center justify-between px-8 py-[18px]">
-        <a href="#home" className="border border-purple-light px-[14px] py-[6px] text-center leading-tight">
-          <span className="grad-text block font-display text-[15px] font-bold tracking-[0.3em]">SHL</span>
-          <span className="block font-display text-[8px] tracking-[0.2em] text-pink">SINCE 2026</span>
+        <a href="#home" className="flex items-center">
+          <Image src="/shl-logo.png" alt="SHL - Since 2026" width={140} height={108} className="h-10 w-auto" priority />
         </a>
 
         <nav className="hidden md:block" aria-label="Primary">
