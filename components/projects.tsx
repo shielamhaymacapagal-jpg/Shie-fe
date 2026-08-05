@@ -2,8 +2,8 @@ import { SectionHead } from './section-head'
 
 const PROJECTS = [
   {
-        name: 'Project 1',
-        tags: ['Website', 'CRM', 'Automation', 'Booking'],
+        name: 'A2P 10DLC Compliance & SMS Automation',
+        tags: ['A2P 10DLC', 'SMS Automation', 'GoHighLevel', 'Lead Automation'],
   },
   {
         name: 'Project 2',
