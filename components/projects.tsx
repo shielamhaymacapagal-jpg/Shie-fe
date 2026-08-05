@@ -2,18 +2,18 @@ import { SectionHead } from './section-head'
 
 const PROJECTS = [
   {
-    name: 'Phoenix Signs & Apparel',
-    tags: ['Website', 'CRM', 'Automation', 'Booking'],
+        name: 'Project 1',
+        tags: ['Website', 'CRM', 'Automation', 'Booking'],
   },
   {
-    name: 'Her Digital Haven',
-    tags: ['Website', 'Funnel', 'Forms', 'Calendar'],
+        name: 'Project 2',
+        tags: ['Website', 'Funnel', 'Forms', 'Calendar'],
   },
   {
-    name: 'Coaching Business',
-    tags: ['Funnel', 'Automation', 'Payments'],
+        name: 'Project 3',
+        tags: ['Funnel', 'Automation', 'Payments'],
   },
-]
+  ]
 
 export function Projects() {
   return (
