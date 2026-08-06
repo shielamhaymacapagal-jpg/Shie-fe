@@ -139,6 +139,17 @@ export default function A2PProjectPage() {
                 Terms &amp; Conditions and Privacy Policy pages drafted for SMS compliance.
               </figcaption>
             </figure>
+            <figure>
+              <img
+                src="/projects/a2p-10dlc/sms-workflow.png"
+                alt="GoHighLevel SMS follow-up workflow for new Facebook leads"
+                className="w-full rounded-card border border-border"
+              />
+              <figcaption className="mt-2 text-[12px] text-faint">
+                Automated SMS follow-up workflow in GoHighLevel — instant confirmation text, reply-based branching, and
+                pipeline updates for every new Facebook lead.
+              </figcaption>
+            </figure>
           </div>
         </section>
       </main>
