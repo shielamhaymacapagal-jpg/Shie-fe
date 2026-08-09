@@ -8,10 +8,10 @@ const PROJECTS = [
     newTab: true,
   },
   {
-    name: 'Project 2',
-    tags: ['Website', 'Funnel', 'Forms', 'Calendar'],
-    href: '#contact',
-    newTab: false,
+    name: 'Membership Platform & Automation Engine',
+    tags: ['Website', 'CRM Automation', 'Webhooks', 'Lead Scoring'],
+    href: '/projects/membership-platform-automation',
+    newTab: true,
   },
   {
     name: 'Project 3',
