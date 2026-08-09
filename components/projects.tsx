@@ -14,10 +14,10 @@ const PROJECTS = [
     newTab: true,
   },
   {
-    name: 'Project 3',
-    tags: ['Funnel', 'Automation', 'Payments'],
-    href: '#contact',
-    newTab: false,
+    name: 'Executive Funnel CRM',
+    tags: ['Website', 'Checkout', 'Calendar', 'Automations', 'GoHighLevel'],
+    href: '/projects/executive-funnel-crm',
+    newTab: true,
   },
 ]
 
