@@ -4,13 +4,13 @@ import { useState } from 'react'
 import Image from 'next/image'
 
 const NAV_LINKS = [
-  { href: '#home', label: 'Home' },
-  { href: '#about', label: 'About' },
-  { href: '#services', label: 'Services' },
-  { href: '#projects', label: 'Projects' },
-  { href: '#a2p', label: 'A2P Success' },
-  { href: '#process', label: 'Process' },
-  { href: '#faq', label: 'FAQ' },
+  { href: '/#home', label: 'Home' },
+  { href: '/#about', label: 'About' },
+  { href: '/#services', label: 'Services' },
+  { href: '/#projects', label: 'Projects' },
+  { href: '/#a2p', label: 'A2P Success' },
+  { href: '/#process', label: 'Process' },
+  { href: '/#faq', label: 'FAQ' },
 ]
 
 export function SiteHeader() {
@@ -19,8 +19,8 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-[rgba(10,6,17,0.82)] backdrop-blur-[14px]">
       <div className="mx-auto flex max-w-[1200px] items-center justify-between px-8 py-[18px]">
-        <a href="#home" className="flex items-center">
-                    <Image src="/shl-logo.png" alt="SHL - Since 2026" width={168} height={130} className="h-14 w-auto" priority />
+        <a href="/#home" className="flex items-center">
+          <Image src="/shl-logo.png" alt="SHL - Since 2026" width={168} height={130} className="h-14 w-auto" priority />
         </a>
 
         <nav className="hidden md:block" aria-label="Primary">
@@ -39,7 +39,7 @@ export function SiteHeader() {
         </nav>
 
         <a
-          href="#contact"
+          href="/#contact"
           className="hidden rounded-[4px] border border-purple-light px-5 py-[9px] font-display text-[11px] uppercase tracking-[0.14em] transition hover:border-transparent hover:grad-bg md:inline-block"
         >
           Contact Me
@@ -73,7 +73,7 @@ export function SiteHeader() {
             ))}
             <li>
               <a
-                href="#contact"
+                href="/#contact"
                 onClick={() => setOpen(false)}
                 className="mt-2 inline-block rounded-[4px] border border-purple-light px-5 py-[9px] font-display text-[11px] uppercase tracking-[0.14em]"
               >
