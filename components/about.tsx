@@ -45,11 +45,11 @@ that work together seamlessly.
 <div className="mt-[26px] grid grid-cols-1 gap-[18px] sm:grid-cols-2 sm:gap-x-10">
 {STATS.map((stat) => (
 <div key={stat.label} className="flex items-start gap-3">
-<div className="flex h-[34px] w-[34px] flex-shrink-0 items-center justify-center rounded-lg border border-border bg-card text-[16px] text-pink">
+<div className="flex h-[34px] w-[34px] flex-shrink-0 items-center justify-center rounded-lg border border-border bg-card text-[16px] text-foreground">
 {stat.icon}
 </div>
 <div>
-<div className="font-display text-[19px] font-bold text-purple-light">{stat.num}</div>
+<div className="font-display text-[19px] font-bold text-foreground">{stat.num}</div>
 <div className="text-[12px] text-faint">{stat.label}</div>
 </div>
 </div>
