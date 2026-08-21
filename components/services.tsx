@@ -75,7 +75,7 @@ className="rounded-card border border-border bg-card px-[22px] py-[26px] transit
 <h3 className="mb-3 font-display text-[15px] font-semibold tracking-[0.01em]">{service.title}</h3>
 <ul className="list-none text-[12.5px] text-faint">
 {service.items.map((item) => (
-<li key={item} className="relative py-[3px] pl-[14px] before:absolute before:left-0 before:text-pink before:content-['—']">
+<li key={item} className="relative py-[3px] pl-[14px] before:absolute before:left-0 before:text-foreground before:content-['—']">
 {item}
 </li>
 ))}
