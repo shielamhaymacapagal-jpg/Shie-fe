@@ -14,7 +14,7 @@ export function About() {
 return (
 <section id="about" className="py-[70px] md:py-[110px]">
 <div className="mx-auto grid max-w-[1200px] items-center gap-[50px] px-8 md:grid-cols-[0.95fr_1.45fr]">
-<div className="mx-auto aspect-[3/4] w-full max-w-[380px] overflow-hidden rounded-[24px] border-2 border-purple-light shadow-[0_0_70px_rgba(236,72,153,0.25)]">
+<div className="mx-auto aspect-[3/4] w-full max-w-[380px] overflow-hidden rounded-[24px] border-2 border-purple-light shadow-[0_0_70px_rgba(220,38,38,0.28)]">
 <Image
 src="/shiela-portrait.png"
 alt="Shiela Macapagal"
