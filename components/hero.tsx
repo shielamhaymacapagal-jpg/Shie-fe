@@ -1,73 +1,27 @@
-import Image from 'next/image'
+'use client'
 
-const CHIPS = ['Websites', 'Automation', 'Funnels', 'CRM', 'SMS Compliance']
+import Auralis from '@/components/ui/auralis'
 
 export function Hero() {
-return (
-<section id="home" className="overflow-hidden pb-[60px] pt-[90px]">
-<div className="mx-auto grid max-w-[1200px] items-center gap-[60px] px-8 md:grid-cols-[1.05fr_0.95fr]">
-<div>
-<div className="mb-[10px] font-medium tracking-[0.08em] text-purple-light">HELLO, I&apos;M</div>
-<h1 className="mb-[6px] font-display text-[clamp(38px,5vw,58px)] font-bold leading-[1.05] tracking-[0.01em]">
-<span className="grad-text block">SHIELA MACAPAGAL</span>
-</h1>
-<div className="my-[14px] mb-[18px] font-display text-[clamp(16px,2vw,22px)] font-medium uppercase tracking-[0.12em] text-dim">
-GoHighLevel Expert
-</div>
-<span className="mb-[18px] inline-block text-[15px] text-purple-light underline decoration-pink underline-offset-[6px]">
-Build. Automate. Scale.
-</span>
-<p className="mb-[30px] max-w-[460px] text-[15px] text-dim">
-I help businesses grow with beautiful websites, high-converting funnels, and smart automations built
-entirely inside GoHighLevel.
-</p>
-<div className="mb-9 flex flex-wrap gap-[14px]">
-<a
-href="#projects"
-className="grad-bg inline-block rounded-md px-[26px] py-[14px] font-display text-[12px] font-semibold uppercase tracking-[0.14em] text-white transition hover:-translate-y-px hover:brightness-110"
->
-View Portfolio
-</a>
-<a
-href="#contact"
-className="inline-block rounded-md border border-border px-[26px] py-[14px] font-display text-[12px] font-semibold uppercase tracking-[0.14em] text-foreground transition hover:border-purple-light"
->
-Book Discovery Call
-</a>
-</div>
-<div className="flex flex-wrap gap-x-[22px] gap-y-2 text-[12px] tracking-[0.05em] text-faint">
-{CHIPS.map((chip) => (
-<span key={chip} className="flex items-center gap-[7px]">
-<i className="h-[5px] w-[5px] rounded-full bg-pink" />
-{chip}
-</span>
-))}
-</div>
-</div>
-
-<div className="relative flex justify-center">
-<div className="absolute -inset-10 z-0 bg-[radial-gradient(circle,rgba(236,72,153,0.28),transparent_65%)] blur-[10px]" />
-<div className="relative z-[1] w-full max-w-[380px] overflow-hidden rounded-[18px] border border-border shadow-[0_30px_80px_rgba(147,51,234,0.25)]">
-<Image
-src="/shiela-portrait.png"
-alt="Portrait of Shiela Macapagal, GoHighLevel Expert"
-width={380}
-height={470}
-priority
-className="block h-auto w-full"
-/>
-</div>
-<div className="absolute -right-[18px] bottom-6 z-[2] border border-purple-light bg-[rgba(10,6,17,0.75)] px-[18px] py-4 text-center backdrop-blur-[6px]">
-<Image
-src="/shl-logo.png"
-alt="SHL - Since 2026"
-width={140}
-height={108}
-className="h-14 w-auto"
-/>
-</div>
-</div>
-</div>
-</section>
-)
+  return (
+    <section id="home" className="relative w-full overflow-hidden">
+      <Auralis height="90vh" colors={['#9333ea', '#a78bfa', '#ec4899']} />
+      <div className="pointer-events-none absolute inset-0 z-10 flex flex-col items-center justify-center px-6 text-center">
+        <div className="mb-[10px] font-medium tracking-[0.08em] text-purple-light">HELLO, I&apos;M</div>
+        <h1 className="mb-[6px] font-display text-[clamp(38px,6vw,72px)] font-bold leading-[1.05] tracking-[0.01em]">
+          <span className="grad-text">SHIELA MACAPAGAL</span>
+        </h1>
+        <div className="my-[14px] mb-[18px] font-display text-[clamp(16px,2vw,22px)] font-medium uppercase tracking-[0.12em] text-dim">
+          GoHighLevel Expert
+        </div>
+        <span className="mb-[18px] inline-block text-[15px] text-purple-light underline decoration-pink underline-offset-[6px]">
+          Build. Automate. Scale.
+        </span>
+        <p className="mt-[18px] max-w-[460px] text-[15px] text-dim">
+          I help businesses grow with beautiful websites, high-converting funnels, and smart automations built
+          entirely inside GoHighLevel.
+        </p>
+      </div>
+    </section>
+  )
 }
