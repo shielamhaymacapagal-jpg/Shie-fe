@@ -83,17 +83,17 @@ export default function MembershipPlatformProjectPage() {
       <main className="mx-auto max-w-[900px] px-8 py-[70px] md:py-[110px]">
         <a
           href="/#projects"
-          className="mb-8 inline-block font-display text-[11px] font-semibold uppercase tracking-[0.1em] text-pink"
+          className="mb-8 inline-block font-display text-[13px] font-semibold uppercase tracking-[0.1em] text-pink"
         >
           ← Back to Projects
         </a>
 
         <Eyebrow>Case Study</Eyebrow>
-        <h1 className="mb-6 font-display text-[clamp(28px,3.4vw,40px)] font-semibold tracking-[0.02em] text-balance">
+        <h1 className="mb-6 font-display text-[clamp(30px,3.4vw,42px)] font-semibold tracking-[0.02em] text-balance">
           Membership Platform <span className="grad-text">&amp; Automation Engine</span>
         </h1>
 
-        <p className="mb-10 text-[14.5px] text-dim">
+        <p className="mb-10 text-[16.5px] text-dim">
           Designed and built a full digital ecosystem for a business growth network, combining a high-converting
           website with an automated backend for applicant processing, diagnostic lead scoring, and subscription
           lifecycle management. The build covers end-to-end CRM integration, dynamic lead routing, automated
@@ -101,10 +101,10 @@ export default function MembershipPlatformProjectPage() {
         </p>
 
         <section className="mb-10">
-          <h2 className="mb-3 font-display text-[12px] font-semibold uppercase tracking-[0.08em] text-purple-light">
+          <h2 className="mb-3 font-display text-[14px] font-semibold uppercase tracking-[0.08em] text-purple-light">
             The Challenge
           </h2>
-          <p className="text-[14px] text-dim">
+          <p className="text-[16px] text-dim">
             The client needed to move from manual community management and lead handling to an enterprise-grade
             automated ecosystem. That meant an integrated website and CRM platform able to handle multi-stage
             applicant approvals, dynamic diagnostic lead scoring, automated payment recovery, and calendar
@@ -113,10 +113,10 @@ export default function MembershipPlatformProjectPage() {
         </section>
 
         <section className="mb-10">
-          <h2 className="mb-3 font-display text-[12px] font-semibold uppercase tracking-[0.08em] text-purple-light">
+          <h2 className="mb-3 font-display text-[14px] font-semibold uppercase tracking-[0.08em] text-purple-light">
             My Responsibilities
           </h2>
-          <ul className="list-disc space-y-2 pl-5 text-[14px] text-dim">
+          <ul className="list-disc space-y-2 pl-5 text-[16px] text-dim">
             <li>Designed and deployed website landing pages and expansion membership routes.</li>
             <li>Built conditional application routing workflows (Approved, Pending Seat, On Hold, Denied).</li>
             <li>Integrated webhooks for automated lead diagnostic categorization and tailored nurturing.</li>
@@ -126,10 +126,10 @@ export default function MembershipPlatformProjectPage() {
         </section>
 
         <section className="mb-10">
-          <h2 className="mb-3 font-display text-[12px] font-semibold uppercase tracking-[0.08em] text-purple-light">
+          <h2 className="mb-3 font-display text-[14px] font-semibold uppercase tracking-[0.08em] text-purple-light">
             Process
           </h2>
-          <ul className="list-disc space-y-2 pl-5 text-[14px] text-dim">
+          <ul className="list-disc space-y-2 pl-5 text-[16px] text-dim">
             <li>
               Website &amp; Funnel Architecture — responsive, high-converting landing and application pages
               detailing the expansion framework, core membership tiers, and application pathways.
@@ -156,12 +156,12 @@ export default function MembershipPlatformProjectPage() {
         </section>
 
         <section className="mb-10">
-          <h2 className="mb-3 font-display text-[12px] font-semibold uppercase tracking-[0.08em] text-purple-light">
+          <h2 className="mb-3 font-display text-[14px] font-semibold uppercase tracking-[0.08em] text-purple-light">
             Deliverables
           </h2>
           <div className="flex flex-wrap gap-2">
             {DELIVERABLES.map((item) => (
-              <span key={item} className="rounded-[20px] border border-border px-[9px] py-1 text-[11px] text-purple-light">
+              <span key={item} className="rounded-[20px] border border-border px-[9px] py-1 text-[13px] text-purple-light">
                 {item}
               </span>
             ))}
@@ -169,12 +169,12 @@ export default function MembershipPlatformProjectPage() {
         </section>
 
         <section className="mb-10">
-          <h2 className="mb-3 font-display text-[12px] font-semibold uppercase tracking-[0.08em] text-purple-light">
+          <h2 className="mb-3 font-display text-[14px] font-semibold uppercase tracking-[0.08em] text-purple-light">
             Skills Demonstrated
           </h2>
           <div className="flex flex-wrap gap-2">
             {SKILLS.map((item) => (
-              <span key={item} className="rounded-[20px] border border-border px-[9px] py-1 text-[11px] text-purple-light">
+              <span key={item} className="rounded-[20px] border border-border px-[9px] py-1 text-[13px] text-purple-light">
                 {item}
               </span>
             ))}
@@ -182,10 +182,10 @@ export default function MembershipPlatformProjectPage() {
         </section>
 
         <section className="mb-12">
-          <h2 className="mb-3 font-display text-[12px] font-semibold uppercase tracking-[0.08em] text-purple-light">
+          <h2 className="mb-3 font-display text-[14px] font-semibold uppercase tracking-[0.08em] text-purple-light">
             Outcome
           </h2>
-          <p className="text-[14px] text-dim">
+          <p className="text-[16px] text-dim">
             The new ecosystem removed manual handling for applicant routing, lead segmentation, and appointment
             reminders. Automated payment recovery protects recurring revenue from churn, while the diagnostic lead
             engine delivers immediate, personalized feedback to prospective members.
@@ -193,14 +193,14 @@ export default function MembershipPlatformProjectPage() {
         </section>
 
         <section className="mb-12">
-          <h2 className="mb-5 font-display text-[12px] font-semibold uppercase tracking-[0.08em] text-purple-light">
+          <h2 className="mb-5 font-display text-[14px] font-semibold uppercase tracking-[0.08em] text-purple-light">
             Proof of Work
           </h2>
           <div className="space-y-8">
             {PROOF.map((item) => (
               <figure key={item.src}>
                 <img src={item.src} alt={item.alt} className="w-full rounded-card border border-border" />
-                <figcaption className="mt-2 text-[12px] text-faint">{item.caption}</figcaption>
+                <figcaption className="mt-2 text-[14px] text-faint">{item.caption}</figcaption>
               </figure>
             ))}
           </div>
