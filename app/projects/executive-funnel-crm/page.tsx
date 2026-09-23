@@ -82,17 +82,17 @@ export default function ExecutiveFunnelCrmProjectPage() {
       <main className="mx-auto max-w-[900px] px-8 py-[70px] md:py-[110px]">
         <a
           href="/#projects"
-          className="mb-8 inline-block font-display text-[11px] font-semibold uppercase tracking-[0.1em] text-pink"
+          className="mb-8 inline-block font-display text-[13px] font-semibold uppercase tracking-[0.1em] text-pink"
         >
           ← Back to Projects
         </a>
 
         <Eyebrow>Case Study</Eyebrow>
-        <h1 className="mb-6 font-display text-[clamp(28px,3.4vw,40px)] font-semibold tracking-[0.02em] text-balance">
+        <h1 className="mb-6 font-display text-[clamp(30px,3.4vw,42px)] font-semibold tracking-[0.02em] text-balance">
           High-Ticket Advisory Website, Checkout Funnel <span className="grad-text">&amp; CRM Engine</span>
         </h1>
 
-        <p className="mb-10 text-[14.5px] text-dim">
+        <p className="mb-10 text-[16.5px] text-dim">
           Built a premium digital ecosystem for a high-ticket executive consulting practice, including a custom
           website, an interactive multi-pay checkout funnel, complete GoHighLevel calendar configuration, a
           digital product catalog, and contract-triggered deal pipeline automations. The project demonstrates
@@ -101,10 +101,10 @@ export default function ExecutiveFunnelCrmProjectPage() {
         </p>
 
         <section className="mb-10">
-          <h2 className="mb-3 font-display text-[12px] font-semibold uppercase tracking-[0.08em] text-purple-light">
+          <h2 className="mb-3 font-display text-[14px] font-semibold uppercase tracking-[0.08em] text-purple-light">
             The Challenge
           </h2>
-          <p className="text-[14px] text-dim">
+          <p className="text-[16px] text-dim">
             The advisory practice needed a cohesive digital system to replace fragmented booking and payment
             processes. They required a high-end website to showcase their strategic offerings, a multi-tiered
             checkout funnel supporting flexible payment plans and team add-ons, structured calendar scheduling
@@ -114,10 +114,10 @@ export default function ExecutiveFunnelCrmProjectPage() {
         </section>
 
         <section className="mb-10">
-          <h2 className="mb-3 font-display text-[12px] font-semibold uppercase tracking-[0.08em] text-purple-light">
+          <h2 className="mb-3 font-display text-[14px] font-semibold uppercase tracking-[0.08em] text-purple-light">
             My Responsibilities
           </h2>
-          <ul className="list-disc space-y-2 pl-5 text-[14px] text-dim">
+          <ul className="list-disc space-y-2 pl-5 text-[16px] text-dim">
             <li>Designed and built the primary brand website and high-converting checkout funnel.</li>
             <li>Configured 9 specialized GoHighLevel booking calendars across different meeting types.</li>
             <li>Set up digital product offerings with full payments and tiered financing plans (3, 6, 12, and 24 months).</li>
@@ -127,10 +127,10 @@ export default function ExecutiveFunnelCrmProjectPage() {
         </section>
 
         <section className="mb-10">
-          <h2 className="mb-3 font-display text-[12px] font-semibold uppercase tracking-[0.08em] text-purple-light">
+          <h2 className="mb-3 font-display text-[14px] font-semibold uppercase tracking-[0.08em] text-purple-light">
             Process
           </h2>
-          <ul className="list-disc space-y-2 pl-5 text-[14px] text-dim">
+          <ul className="list-disc space-y-2 pl-5 text-[16px] text-dim">
             <li>
               Brand Website &amp; Checkout Architecture — a responsive, luxury-style website and a multi-step
               checkout experience supporting flexible payment paths (Full Payment vs. 3, 6, 12, or 24-month
@@ -159,14 +159,14 @@ export default function ExecutiveFunnelCrmProjectPage() {
         </section>
 
         <section className="mb-10">
-          <h2 className="mb-3 font-display text-[12px] font-semibold uppercase tracking-[0.08em] text-purple-light">
+          <h2 className="mb-3 font-display text-[14px] font-semibold uppercase tracking-[0.08em] text-purple-light">
             Deliverables
           </h2>
           <div className="flex flex-wrap gap-2">
             {DELIVERABLES.map((item) => (
               <span
                 key={item}
-                className="rounded-[20px] border border-border px-[9px] py-1 text-[11px] text-purple-light"
+                className="rounded-[20px] border border-border px-[9px] py-1 text-[13px] text-purple-light"
               >
                 {item}
               </span>
@@ -175,14 +175,14 @@ export default function ExecutiveFunnelCrmProjectPage() {
         </section>
 
         <section className="mb-10">
-          <h2 className="mb-3 font-display text-[12px] font-semibold uppercase tracking-[0.08em] text-purple-light">
+          <h2 className="mb-3 font-display text-[14px] font-semibold uppercase tracking-[0.08em] text-purple-light">
             Skills Demonstrated
           </h2>
           <div className="flex flex-wrap gap-2">
             {SKILLS.map((item) => (
               <span
                 key={item}
-                className="rounded-[20px] border border-border px-[9px] py-1 text-[11px] text-purple-light"
+                className="rounded-[20px] border border-border px-[9px] py-1 text-[13px] text-purple-light"
               >
                 {item}
               </span>
@@ -191,10 +191,10 @@ export default function ExecutiveFunnelCrmProjectPage() {
         </section>
 
         <section className="mb-12">
-          <h2 className="mb-3 font-display text-[12px] font-semibold uppercase tracking-[0.08em] text-purple-light">
+          <h2 className="mb-3 font-display text-[14px] font-semibold uppercase tracking-[0.08em] text-purple-light">
             Outcome
           </h2>
-          <p className="text-[14px] text-dim">
+          <p className="text-[16px] text-dim">
             The completed platform fully automates client intake from first touch to signed contract. By
             integrating payment plan checkouts, automated contract delivery, and retention sequences for
             cancelled bookings, the client saves hours of manual administrative work per client while
@@ -203,7 +203,7 @@ export default function ExecutiveFunnelCrmProjectPage() {
         </section>
 
         <section className="mb-12">
-          <h2 className="mb-5 font-display text-[12px] font-semibold uppercase tracking-[0.08em] text-purple-light">
+          <h2 className="mb-5 font-display text-[14px] font-semibold uppercase tracking-[0.08em] text-purple-light">
             Proof of Work
           </h2>
           <div className="space-y-8">
@@ -214,7 +214,7 @@ export default function ExecutiveFunnelCrmProjectPage() {
                   alt={item.alt}
                   className="w-full rounded-card border border-border"
                 />
-                <figcaption className="mt-2 text-[12px] text-faint">{item.caption}</figcaption>
+                <figcaption className="mt-2 text-[14px] text-faint">{item.caption}</figcaption>
               </figure>
             ))}
           </div>
