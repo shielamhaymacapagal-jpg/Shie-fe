@@ -32,16 +32,16 @@ return (
 key={project.name}
 className="overflow-hidden rounded-card border border-border bg-card transition duration-[250ms] hover:-translate-y-1 hover:border-purple-light"
 >
-<div className="flex h-[170px] items-center justify-center bg-[linear-gradient(135deg,#3a0f0f,#450a0a)] px-4 text-center font-display text-[12px] uppercase tracking-[0.1em] text-foreground">
+<div className="flex h-[170px] items-center justify-center bg-[linear-gradient(135deg,#3a0f0f,#450a0a)] px-4 text-center font-display text-[14px] uppercase tracking-[0.1em] text-foreground">
 {project.name}
 </div>
 <div className="px-[22px] pb-6 pt-5">
-<h3 className="mb-[10px] font-display text-[16px] font-semibold">{project.name}</h3>
+<h3 className="mb-[10px] font-display text-[18px] font-semibold">{project.name}</h3>
 <div className="mb-4 flex flex-wrap gap-2">
 {project.tags.map((tag) => (
 <span
 key={tag}
-className="rounded-[20px] border border-border px-[9px] py-1 font-display text-[10px] uppercase tracking-[0.06em] text-foreground"
+className="rounded-[20px] border border-border px-[9px] py-1 font-display text-[12px] uppercase tracking-[0.06em] text-foreground"
 >
 {tag}
 </span>
@@ -51,7 +51,7 @@ className="rounded-[20px] border border-border px-[9px] py-1 font-display text-[
 href={project.href}
 target={project.newTab ? '_blank' : undefined}
 rel={project.newTab ? 'noopener noreferrer' : undefined}
-className="font-display text-[11px] font-semibold uppercase tracking-[0.1em] text-foreground"
+className="font-display text-[13px] font-semibold uppercase tracking-[0.1em] text-foreground"
 >
 View Project →
 </a>
