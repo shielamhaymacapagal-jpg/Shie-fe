@@ -9,6 +9,8 @@ type Props = {
   /** ms between auto-advances; 0 disables */
   interval?: number;
   className?: string;
+  /** size/aspect classes for the card frame */
+  frameClassName?: string;
 };
 
 /**
@@ -16,7 +18,7 @@ type Props = {
  * fan out behind it. Auto-rotates (pauses on hover), click a back card to
  * bring it forward, click the front card to view it full size.
  */
-export default function SocialCards({ cards, interval = 4000, className = "" }: Props) {
+export default function SocialCards({ cards, interval = 4000, className = "", frameClassName = "aspect-[16/11] w-[78%] max-w-[760px]" }: Props) {
   const n = cards.length;
   const [active, setActive] = useState(0);
   const [paused, setPaused] = useState(false);
@@ -59,7 +61,7 @@ export default function SocialCards({ cards, interval = 4000, className = "" }: 
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
     >
-      <div className="relative mx-auto aspect-[16/11] w-[78%] max-w-[760px]">
+      <div className={`relative mx-auto ${frameClassName}`}>
         {cards.map((card, i) => {
           const isActive = i === active;
           return (
