@@ -69,11 +69,11 @@ return (
 key={service.title}
 className="rounded-card border border-border bg-card px-[22px] py-[26px] transition duration-[250ms] hover:-translate-y-[3px] hover:border-purple-light hover:shadow-[0_16px_40px_rgba(220,38,38,0.18)]"
 >
-<div className="grad-bg mb-4 flex h-[38px] w-[38px] items-center justify-center rounded-[9px] text-[17px] text-white">
+<div className="grad-bg mb-4 flex h-[38px] w-[38px] items-center justify-center rounded-[9px] text-[19px] text-white">
 {service.icon}
 </div>
-<h3 className="mb-3 font-display text-[15px] font-semibold tracking-[0.01em]">{service.title}</h3>
-<ul className="list-none text-[12.5px] text-faint">
+<h3 className="mb-3 font-display text-[17px] font-semibold tracking-[0.01em]">{service.title}</h3>
+<ul className="list-none text-[14.5px] text-faint">
 {service.items.map((item) => (
 <li key={item} className="relative py-[3px] pl-[14px] before:absolute before:left-0 before:text-foreground before:content-['—']">
 {item}
