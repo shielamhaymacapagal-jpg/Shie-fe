@@ -26,18 +26,18 @@ className="h-full w-full object-cover object-top"
 
 <div>
 <Eyebrow>About Me</Eyebrow>
-<h2 className="mb-4 font-display text-[clamp(28px,3.4vw,40px)] font-semibold tracking-[0.02em] text-balance">
+<h2 className="mb-4 font-display text-[clamp(30px,3.4vw,42px)] font-semibold tracking-[0.02em] text-balance">
 Business systems, not just <span className="grad-text">beautiful websites</span>
 </h2>
-<p className="mb-[14px] max-w-[640px] text-[15px] text-dim">
+<p className="mb-[14px] max-w-[640px] text-[17px] text-dim">
 Hi, I&apos;m Shiela, a GoHighLevel Expert from the Philippines specializing in complete business systems —
 not just beautiful websites.
 </p>
-<p className="mb-[14px] max-w-[640px] text-[15px] text-dim">
+<p className="mb-[14px] max-w-[640px] text-[17px] text-dim">
 I help coaches, agencies, service providers, and small businesses launch professional websites while
 connecting every part of their business inside GoHighLevel.
 </p>
-<p className="mb-[14px] max-w-[640px] text-[15px] text-dim">
+<p className="mb-[14px] max-w-[640px] text-[17px] text-dim">
 From automation and CRM setup to funnels, forms, calendars, payments, and SMS compliance, I build systems
 that work together seamlessly.
 </p>
@@ -45,12 +45,12 @@ that work together seamlessly.
 <div className="mt-[26px] grid grid-cols-1 gap-[18px] sm:grid-cols-2 sm:gap-x-10">
 {STATS.map((stat) => (
 <div key={stat.label} className="flex items-start gap-3">
-<div className="flex h-[34px] w-[34px] flex-shrink-0 items-center justify-center rounded-lg border border-border bg-card text-[16px] text-foreground">
+<div className="flex h-[34px] w-[34px] flex-shrink-0 items-center justify-center rounded-lg border border-border bg-card text-[18px] text-foreground">
 {stat.icon}
 </div>
 <div>
-<div className="font-display text-[19px] font-bold text-foreground">{stat.num}</div>
-<div className="text-[12px] text-faint">{stat.label}</div>
+<div className="font-display text-[21px] font-bold text-foreground">{stat.num}</div>
+<div className="text-[14px] text-faint">{stat.label}</div>
 </div>
 </div>
 ))}
