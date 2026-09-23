@@ -1,4 +1,5 @@
 import { SectionHead } from './section-head'
+import ContentOpsShowcase from './content-ops-showcase'
 
 const PROJECTS = [
 {
@@ -83,6 +84,7 @@ className="rounded-[20px] border border-border px-[10px] py-1 font-display text-
 </article>
 ))}
 </div>
+<ContentOpsShowcase />
 </div>
 </section>
 )
