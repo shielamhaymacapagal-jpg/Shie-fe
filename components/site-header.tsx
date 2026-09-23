@@ -23,13 +23,13 @@ export function SiteHeader() {
           <Image src="/shl-logo.png" alt="SHL - Since 2026" width={168} height={130} className="h-14 w-auto" priority />
         </a>
 
-        <nav className="hidden md:block" aria-label="Primary">
+        <nav className="hidden lg:block" aria-label="Primary">
           <ul className="flex list-none gap-[30px]">
             {NAV_LINKS.map((link) => (
               <li key={link.href}>
                 <a
                   href={link.href}
-                  className="font-display text-[14px] uppercase tracking-[0.12em] text-dim transition-colors hover:text-foreground"
+                  className="whitespace-nowrap font-display text-[14px] uppercase tracking-[0.12em] text-dim transition-colors hover:text-foreground"
                 >
                   {link.label}
                 </a>
@@ -40,13 +40,13 @@ export function SiteHeader() {
 
         <a
           href="/#contact"
-          className="hidden rounded-[4px] border border-purple-light px-5 py-[9px] font-display text-[13px] uppercase tracking-[0.14em] transition hover:border-transparent hover:grad-bg md:inline-block"
+          className="hidden rounded-[4px] border border-purple-light px-5 py-[9px] font-display text-[13px] uppercase tracking-[0.14em] transition hover:border-transparent hover:grad-bg whitespace-nowrap lg:inline-block"
         >
           Contact Me
         </a>
 
         <button
-          className="flex flex-col gap-1 md:hidden"
+          className="flex flex-col gap-1 lg:hidden"
           aria-label="Toggle menu"
           aria-expanded={open}
           onClick={() => setOpen((v) => !v)}
@@ -58,7 +58,7 @@ export function SiteHeader() {
       </div>
 
       {open && (
-        <nav className="border-t border-border bg-[rgba(10,6,17,0.95)] md:hidden" aria-label="Mobile">
+        <nav className="border-t border-border bg-[rgba(10,6,17,0.95)] lg:hidden" aria-label="Mobile">
           <ul className="flex list-none flex-col px-8 py-4">
             {NAV_LINKS.map((link) => (
               <li key={link.href}>
