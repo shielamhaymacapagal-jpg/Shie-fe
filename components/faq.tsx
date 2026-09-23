@@ -35,19 +35,19 @@ const isOpen = openIndex === index
 return (
 <div key={faq.q} className="border-b border-border py-[22px]">
 <button
-className="flex w-full items-center justify-between text-left text-[15px] font-medium"
+className="flex w-full items-center justify-between text-left text-[17px] font-medium"
 aria-expanded={isOpen}
 onClick={() => setOpenIndex(isOpen ? null : index)}
 >
 {faq.q}
 <span
-className={`text-[18px] text-foreground transition-transform duration-200 ${isOpen ? 'rotate-45' : ''}`}
+className={`text-[20px] text-foreground transition-transform duration-200 ${isOpen ? 'rotate-45' : ''}`}
 >
 +
 </span>
 </button>
 <div
-className="grid overflow-hidden text-[14px] text-dim transition-all duration-300"
+className="grid overflow-hidden text-[16px] text-dim transition-all duration-300"
 style={{ gridTemplateRows: isOpen ? '1fr' : '0fr', marginTop: isOpen ? 12 : 0 }}
 >
 <div className="overflow-hidden">{faq.a}</div>
