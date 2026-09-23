@@ -26,7 +26,7 @@ return (
 <div className="mx-auto mb-[14px] flex h-12 w-12 items-center justify-center rounded-full border border-purple-light bg-background font-display font-semibold text-foreground">
 {step.num}
 </div>
-<h4 className="font-display text-[13px] uppercase tracking-[0.06em]">{step.label}</h4>
+<h4 className="font-display text-[15px] uppercase tracking-[0.06em]">{step.label}</h4>
 </div>
 ))}
 </div>
@@ -44,7 +44,7 @@ return (
 {STACK.map((tool) => (
 <span
 key={tool}
-className="rounded-[20px] border border-border bg-card px-[18px] py-[9px] text-[12.5px] text-dim"
+className="rounded-[20px] border border-border bg-card px-[18px] py-[9px] text-[14.5px] text-dim"
 >
 {tool}
 </span>
