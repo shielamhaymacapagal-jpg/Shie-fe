@@ -29,7 +29,7 @@ export function SiteHeader() {
               <li key={link.href}>
                 <a
                   href={link.href}
-                  className="font-display text-[12px] uppercase tracking-[0.12em] text-dim transition-colors hover:text-foreground"
+                  className="font-display text-[14px] uppercase tracking-[0.12em] text-dim transition-colors hover:text-foreground"
                 >
                   {link.label}
                 </a>
@@ -40,7 +40,7 @@ export function SiteHeader() {
 
         <a
           href="/#contact"
-          className="hidden rounded-[4px] border border-purple-light px-5 py-[9px] font-display text-[11px] uppercase tracking-[0.14em] transition hover:border-transparent hover:grad-bg md:inline-block"
+          className="hidden rounded-[4px] border border-purple-light px-5 py-[9px] font-display text-[13px] uppercase tracking-[0.14em] transition hover:border-transparent hover:grad-bg md:inline-block"
         >
           Contact Me
         </a>
@@ -65,7 +65,7 @@ export function SiteHeader() {
                 <a
                   href={link.href}
                   onClick={() => setOpen(false)}
-                  className="block py-3 font-display text-[13px] uppercase tracking-[0.12em] text-dim transition-colors hover:text-foreground"
+                  className="block py-3 font-display text-[15px] uppercase tracking-[0.12em] text-dim transition-colors hover:text-foreground"
                 >
                   {link.label}
                 </a>
@@ -75,7 +75,7 @@ export function SiteHeader() {
               <a
                 href="/#contact"
                 onClick={() => setOpen(false)}
-                className="mt-2 inline-block rounded-[4px] border border-purple-light px-5 py-[9px] font-display text-[11px] uppercase tracking-[0.14em]"
+                className="mt-2 inline-block rounded-[4px] border border-purple-light px-5 py-[9px] font-display text-[13px] uppercase tracking-[0.14em]"
               >
                 Contact Me
               </a>
