@@ -2,11 +2,11 @@ import Image from 'next/image'
 import { Eyebrow } from './section-head'
 
 const STATS = [
-{ icon: '◈', num: '2+', label: 'Years in GoHighLevel' },
-{ icon: '✦', num: '100+', label: 'Automation Systems' },
-{ icon: '◉', num: '30+', label: 'Business Websites' },
-{ icon: '✓', num: '5+', label: 'A2P Approved Projects' },
-{ icon: '▤', num: '50+', label: 'Funnels & Landing Pages' },
+{ icon: '◈', num: '1+', label: 'Year in GoHighLevel' },
+{ icon: '✦', num: '30+', label: 'Automation Systems' },
+{ icon: '◉', num: '10+', label: 'Business Websites' },
+{ icon: '✓', num: '', label: 'A2P Approved Projects' },
+{ icon: '▤', num: '10+', label: 'Funnels & Landing Pages' },
 { icon: '◎', num: 'Philippines', label: 'Based in Malolos City' },
 ]
 
