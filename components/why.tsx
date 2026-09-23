@@ -31,9 +31,9 @@ return (
 <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
 {REASONS.map((reason) => (
 <div key={reason.num} className="px-1 py-2">
-<span className="mb-[10px] block font-display text-[12px] tracking-[0.1em] text-foreground">{reason.num}</span>
-<h3 className="mb-2 font-display text-[16px] font-semibold">{reason.title}</h3>
-<p className="text-[13.5px] text-faint">{reason.text}</p>
+<span className="mb-[10px] block font-display text-[14px] tracking-[0.1em] text-foreground">{reason.num}</span>
+<h3 className="mb-2 font-display text-[18px] font-semibold">{reason.title}</h3>
+<p className="text-[15.5px] text-faint">{reason.text}</p>
 </div>
 ))}
 </div>
