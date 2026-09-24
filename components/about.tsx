@@ -3,10 +3,10 @@ import { Eyebrow } from './section-head'
 
 const STATS = [
 { icon: '◈', num: '1+', label: 'Year in GoHighLevel' },
-{ icon: '✦', num: '30+', label: 'Automation Systems' },
-{ icon: '◉', num: '10+', label: 'Business Websites' },
+{ icon: '✦', num: '', label: 'Automation Systems' },
+{ icon: '◉', num: '', label: 'Business Websites' },
 { icon: '✓', num: '', label: 'A2P Approved Projects' },
-{ icon: '▤', num: '10+', label: 'Funnels & Landing Pages' },
+{ icon: '▤', num: '', label: 'Funnels & Landing Pages' },
 { icon: '◎', num: 'Philippines', label: 'Based in Malolos City' },
 ]
 
@@ -44,14 +44,18 @@ that work together seamlessly.
 
 <div className="mt-[26px] grid grid-cols-1 gap-[18px] sm:grid-cols-2 sm:gap-x-10">
 {STATS.map((stat) => (
-<div key={stat.label} className="flex items-start gap-3">
+<div key={stat.label} className={`flex gap-3 ${stat.num ? 'items-start' : 'items-center'}`}>
 <div className="flex h-[34px] w-[34px] flex-shrink-0 items-center justify-center rounded-lg border border-border bg-card text-[18px] text-foreground">
 {stat.icon}
 </div>
+{stat.num ? (
 <div>
 <div className="font-display text-[21px] font-bold text-foreground">{stat.num}</div>
 <div className="text-[14px] text-faint">{stat.label}</div>
 </div>
+) : (
+<div className="font-display text-[17px] font-semibold text-foreground">{stat.label}</div>
+)}
 </div>
 ))}
 </div>
