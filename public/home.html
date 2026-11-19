@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shiela Macapagal — GoHighLevel Specialist Portfolio</title>
+<meta name="description" content="GoHighLevel Specialist portfolio: websites, funnels, CRM pipelines, workflow automation, AI automation, webhooks and A2P 10DLC compliance.">
+<meta property="og:title" content="Shiela Macapagal — GoHighLevel Portfolio">
+<meta property="og:description" content="Websites, funnels, CRM and automations built inside GoHighLevel.">
+<meta name="theme-color" content="#161616">
+<link rel="icon" href="/icon.png" sizes="512x512" type="image/png">
+<link rel="apple-touch-icon" href="/apple-icon.png" sizes="180x180" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@200;300;800;900&family=Instrument+Serif:ital@0;1&family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#161616; --ink-2:#212121; --ink-3:#2A2A2A; --line:#2b2b2b;
+  --paper:#EEEAE2; --paper-2:#E4DED3; --paper-line:#DDD7CC;
+  --signal:#E5432D; --amber:#F2A33A; --mute:#9A948B; --body:#4a4540;
+  --display:'Archivo',system-ui,sans-serif; --serif:'Instrument Serif',Georgia,serif;
+  --mono:'Space Mono',ui-monospace,monospace; --sans:'Inter',system-ui,sans-serif;
+  --max:1240px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--ink);color:var(--paper);-webkit-font-smoothing:antialiased;overflow-x:hidden;line-height:1.6}
+img,video{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font:inherit}
+::selection{background:var(--signal);color:#fff}
+.grid-dark{background-color:var(--ink);background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:32px 32px}
+.grid-paper{background-color:var(--paper);color:var(--ink);background-image:linear-gradient(var(--paper-line) 1px,transparent 1px),linear-gradient(90deg,var(--paper-line) 1px,transparent 1px);background-size:32px 32px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 28px}
+.tape{display:inline-block;font-family:var(--mono);font-size:12px;letter-spacing:.5px;background:var(--paper);color:var(--ink);padding:6px 13px;box-shadow:0 1px 0 rgba(0,0,0,.08)}
+.tape.dark{background:var(--ink);color:var(--paper)}
+.tape.red{background:var(--signal);color:#fff}
+.kicker{font-family:var(--mono);font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--signal)}
+
+/* NAV */
+nav{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .3s,backdrop-filter .3s}
+nav.scrolled{background:rgba(22,22,22,.86);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:74px}
+.logo{font-family:var(--display);font-weight:900;font-size:22px;line-height:.9;letter-spacing:0}
+.logo small{display:block;font-family:var(--sans);font-weight:500;font-size:10px;color:var(--signal);letter-spacing:.3px;margin-top:5px}
+.nav-links{display:flex;gap:30px;font-size:14px;color:#cfc9bf}
+.nav-links a:hover{color:var(--signal)}
+.btn{display:inline-flex;align-items:center;gap:10px;font-family:var(--mono);font-size:15.5px;font-weight:700;padding:17px 30px;border:2px solid var(--signal);background:var(--signal);color:#fff;transition:transform .2s,background .2s,box-shadow .2s;cursor:pointer}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:4px 4px 0 var(--paper)}
+.nav-cta{font-size:14px;padding:12px 22px}
+.btn.ghost{background:transparent;color:var(--paper);border-color:var(--paper)}
+.btn.ghost:hover{box-shadow:4px 4px 0 var(--signal)}
+.grid-paper .btn:hover{box-shadow:4px 4px 0 var(--ink)}
+.burger{display:none;background:none;border:0;color:var(--paper);font-size:26px;cursor:pointer}
+
+/* HERO */
+.hero{position:relative;min-height:100vh;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.hero svg.cord{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.hero-title{position:relative;z-index:5;text-align:center;padding:130px 20px 90px}
+.hero-title .name{display:table;margin:0 auto 26px;transform:rotate(-3deg);font-size:14px}
+.hero-title .meta{display:flex;justify-content:space-between;font-family:var(--serif);font-size:19px;color:var(--paper);margin-bottom:10px;padding:0 6px;letter-spacing:.04em}
+.hero-title h1{font-family:var(--display);font-weight:900;font-size:clamp(64px,12vw,168px);line-height:.98;letter-spacing:-.01em;color:var(--signal)}
+.hero-title h1 span{display:block}
+.hero-title .ttl{display:inline-block}
+.hero-title .tagline{font-family:var(--mono);font-size:13px;letter-spacing:2px;color:#cfc9bf;margin-top:24px}
+.hero-title p{max-width:470px;margin:16px auto 0;color:#bdb6ab;font-size:16px;line-height:1.7}
+.hero-cta{display:flex;gap:14px;justify-content:center;margin-top:30px;flex-wrap:wrap}
+.float{position:absolute;z-index:3;background:#fff;color:var(--ink);border-radius:8px;padding:12px;box-shadow:0 22px 40px rgba(0,0,0,.45);transition:transform .5s cubic-bezier(.2,.8,.2,1)}
+.float .lbl{font-family:var(--mono);font-size:10px;margin-top:8px;letter-spacing:.4px}
+.float.logo-f{background:none;padding:0;box-shadow:none;border-radius:0;filter:drop-shadow(0 18px 24px rgba(0,0,0,.55))}
+.float.logo-f img{width:100%;height:auto}
+.f1{left:4%;top:32%;width:270px;transform:rotate(0deg)}
+.f2{right:2%;top:27%;width:230px;transform:rotate(-5deg)}
+.f3{left:6%;bottom:9%;width:250px;transform:rotate(6deg);background:var(--ink-3);color:var(--paper)}
+.f4{right:6%;bottom:8%;width:240px;transform:rotate(-6deg);background:var(--paper)}
+.f5{left:11%;top:10%;width:115px;transform:rotate(10deg)}
+.f6{right:25%;bottom:7%;width:110px;transform:rotate(8deg)}
+.f7{right:4%;top:52%;width:120px;transform:rotate(-6deg)}
+.mono-lines{font-family:var(--mono);font-size:11px;line-height:1.75;color:#aaa}
+.mono-lines b{color:var(--amber);font-weight:400}
+.stage-row{display:grid;grid-template-columns:repeat(4,1fr);gap:4px;margin-top:10px}
+.stage-row div{font-family:var(--mono);font-size:8.5px;text-align:center;padding:6px 2px;border-radius:3px;background:#e2dccf}
+.stage-row div.on{background:var(--signal);color:#fff}
+
+/* MARQUEE */
+.marquee{background:var(--ink);border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden;padding:20px 0}
+.marquee .track{display:flex;width:max-content;animation:mq 30s linear infinite}
+.marquee span{font-family:var(--display);font-weight:900;font-size:clamp(26px,3.4vw,42px);letter-spacing:0;padding:0 22px;white-space:nowrap;display:flex;align-items:center;gap:44px;line-height:1.2}
+.marquee span:after{content:"✦";color:var(--signal);font-size:.7em}
+.marquee.paper{background:var(--signal);border:0}
+.marquee.paper span{color:#fff}.marquee.paper span:after{color:var(--ink)}
+.marquee.rev .track{animation-direction:reverse}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* ABOUT */
+.about{padding:130px 0}
+.about-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:70px;align-items:center}
+.hello{font-family:var(--display);font-weight:900;font-size:clamp(52px,7vw,96px);line-height:1;letter-spacing:-.01em}
+.hello em{font-style:normal;color:var(--signal)}
+.hello .thin{font-weight:200}
+.about p.lead{font-size:18px;line-height:1.75;color:var(--body);margin-top:28px;max-width:540px}
+.badges{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:42px;border:2px solid var(--ink)}
+.stat{padding:20px 18px;border-right:2px solid var(--ink)}.stat:last-child{border-right:0}
+.stat b{display:block;font-family:var(--display);font-weight:900;font-size:38px;letter-spacing:0;line-height:1.1;color:var(--signal)}
+.stat b{white-space:nowrap}.stat b small{font-size:.38em;font-weight:800;text-transform:uppercase;letter-spacing:.04em;vertical-align:.35em}
+.stat strong{display:block;font-family:var(--display);font-weight:800;font-size:16px;margin-top:6px;line-height:1.25}
+.stat span{display:block;font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.5px;margin-top:4px;line-height:1.5;color:var(--body)}
+.polaroids{position:relative;height:600px}
+.pola{position:absolute;background:#fff;padding:12px 12px 48px;box-shadow:0 18px 40px rgba(0,0,0,.18);transition:transform .4s}
+.pola:hover{transform:rotate(0) scale(1.04)!important;z-index:9}
+.pola .ph{background:var(--ink-3);display:flex;align-items:center;justify-content:center;color:#777;font-family:var(--mono);font-size:11px;text-align:center;padding:10px;overflow:hidden}
+.pola .ph img{width:100%;height:100%;object-fit:cover}
+.pola .cap{position:absolute;bottom:12px;left:0;right:0;text-align:center;font-family:var(--serif);font-style:italic;font-size:21px;color:var(--ink)}
+.p1{left:-2%;top:0;width:360px;transform:rotate(-5deg);z-index:2}.p1 .ph{height:450px}
+.p2{right:0;top:10px;width:190px;transform:rotate(7deg)}.p2 .ph{height:165px;background:var(--signal);color:#fff}
+.p3{right:-3%;bottom:-6px;width:270px;transform:rotate(-4deg);z-index:3}.p3 .ph{height:146px;background:var(--amber);color:var(--ink)}
+.glyph{font-family:var(--display);font-weight:900;line-height:1.05;text-align:center}
+.mini-flow{display:flex;flex-direction:column;align-items:center;gap:6px;font-family:var(--mono);font-size:10px}
+.mini-flow i{font-style:normal;background:#fff;color:var(--ink);padding:4px 10px;border-radius:4px}
+.mini-flow em{font-style:normal;opacity:.8}
+
+/* SECTION HEAD */
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;margin-bottom:64px;flex-wrap:wrap}
+.big{font-family:var(--display);font-size:clamp(48px,7.5vw,110px);line-height:1;letter-spacing:-.01em}
+.big .thin{font-weight:200}.big .heavy{font-weight:900;color:var(--signal)}
+.sec-head p{max-width:400px;color:var(--mute);line-height:1.7}
+.grid-paper .sec-head p{color:var(--body)}
+
+/* SKILLS */
+.skill{padding:120px 0;position:relative;overflow:hidden}
+.skill-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:70px;align-items:center}
+.skill.flip .skill-grid>div:first-child{order:2}
+.num{font-family:var(--mono);font-size:13px;letter-spacing:1px;display:flex;align-items:center;gap:12px;margin-bottom:24px}
+.num:before{content:"";width:40px;height:2px;background:var(--signal)}
+.skill h2{font-family:var(--display);font-size:clamp(46px,6vw,84px);line-height:1.02;letter-spacing:-.01em}
+.skill h2 .thin{font-weight:200}.skill h2 .heavy{font-weight:900;color:var(--signal);display:block}
+.skill .tape{margin-top:20px;transform:rotate(-2deg)}
+.skill p.desc{font-size:17px;line-height:1.75;margin-top:26px;max-width:500px}
+.skill.grid-dark p.desc{color:#bdb6ab}
+.skill.grid-paper p.desc{color:var(--body)}
+.list{list-style:none;margin-top:26px;display:grid;gap:0}
+.list li{display:flex;gap:14px;align-items:baseline;padding:13px 0;border-bottom:1px dashed rgba(128,128,128,.35);font-size:15px;line-height:1.55}
+.list li:before{content:"↘";color:var(--signal);font-family:var(--mono)}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.tags span{font-family:var(--mono);font-size:11px;padding:6px 11px;border:1.5px solid currentColor}
+
+/* boards */
+.board{position:relative;min-height:440px}
+.card{background:#fff;color:var(--ink);border-radius:8px;padding:14px;box-shadow:0 20px 44px rgba(0,0,0,.28)}
+.grid-paper .card{box-shadow:0 18px 40px rgba(0,0,0,.14)}
+.card .lbl{font-family:var(--mono);font-size:10px;letter-spacing:.5px;color:#777;margin-top:9px;display:flex;justify-content:space-between}
+.pill{display:inline-block;font-family:var(--mono);font-size:9.5px;padding:2px 8px;border-radius:20px;margin-bottom:6px}
+.af-bar{display:flex;align-items:center;gap:6px;padding:10px 14px;background:var(--ink);font-family:var(--mono);font-size:10.5px;color:#aaa}
+.af-bar i{width:9px;height:9px;border-radius:50%;background:#444}.af-bar i:first-child{background:var(--signal)}.af-bar span{margin-left:8px}
+
+/* 01 workflow builder */
+.flow{background:#fff;color:var(--ink);border-radius:10px;overflow:hidden;box-shadow:0 22px 50px rgba(0,0,0,.45);transform:rotate(-1.2deg)}
+.flow-body{padding:22px 22px 26px;background:#f7f6f3;background-image:radial-gradient(#d9d5cc 1px,transparent 1px);background-size:14px 14px;display:flex;flex-direction:column;align-items:center}
+.fnode{width:min(320px,100%);background:#fff;border:1.5px solid #e3e0d9;border-radius:8px;padding:10px 12px;display:flex;gap:12px;align-items:center;font-size:13px;line-height:1.35;box-shadow:0 4px 10px rgba(0,0,0,.05)}
+.fnode .ic{flex:0 0 28px;height:28px;border-radius:6px;display:grid;place-items:center;color:#fff;font-size:13px;font-weight:700}
+.fnode small{display:block;font-family:var(--mono);font-size:9.5px;color:#888;letter-spacing:.4px;text-transform:uppercase}
+.fnode.trig{border-color:var(--signal)}
+.wire{width:2px;height:22px;background:repeating-linear-gradient(to bottom,#bdb8ae 0 4px,transparent 4px 8px);background-size:2px 8px;animation:flowdash .6s linear infinite}
+@keyframes flowdash{to{background-position:0 8px}}
+.branch{display:grid;grid-template-columns:1fr 1fr;gap:12px;width:100%;position:relative;padding-top:20px}
+.branch:before{content:"";position:absolute;top:0;left:25%;right:25%;height:2px;background:#bdb8ae}
+.branch .fnode{width:100%;position:relative}
+.branch .fnode:before{content:"";position:absolute;top:-20px;left:50%;width:2px;height:20px;background:#bdb8ae}
+
+/* 02 funnel wall */
+.creative-wall{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.creative-wall .card:nth-child(1){transform:rotate(-3deg)}
+.creative-wall .card:nth-child(2){transform:rotate(2deg) translateY(26px)}
+.creative-wall .card:nth-child(3){transform:rotate(2deg)}
+.creative-wall .card:nth-child(4){transform:rotate(-2deg) translateY(26px)}
+.creative-wall .card{transition:transform .35s}
+.creative-wall .card:hover{transform:rotate(0) translateY(-6px)!important}
+.pg{height:190px;background:#fafafa;border-radius:4px;padding:10px;display:flex;flex-direction:column;gap:6px;overflow:hidden}
+.pg .hd{display:flex;justify-content:space-between;align-items:center}
+.pg .hd b{font-family:var(--display);font-weight:900;font-size:11px}
+.pg .hd i{display:flex;gap:4px}.pg .hd i:before,.pg .hd i:after{content:"";width:16px;height:4px;background:#ddd;border-radius:2px}
+.pg .hero-b{background:var(--ink);color:#fff;border-radius:3px;padding:10px;font-family:var(--display);font-weight:900;font-size:13px;line-height:1.15}
+.pg .hero-b span{color:var(--signal)}
+.pg .ln{height:5px;background:#e6e6e6;border-radius:3px}
+.pg .inp{height:16px;border:1px solid #e1e1e1;border-radius:3px;background:#fff}
+.pg .cta{background:var(--signal);color:#fff;font-family:var(--mono);font-size:9px;text-align:center;padding:5px;border-radius:3px;margin-top:auto}
+.pg .price{display:flex;justify-content:space-between;align-items:center;font-size:11px;font-weight:600;border:1px dashed #ddd;padding:6px 8px;border-radius:3px}
+.pg .check{font-size:30px;color:#1f7a46;text-align:center;line-height:1;margin-top:8px}
+
+/* 03 kanban */
+.kanban{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.col{background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:8px;padding:12px;min-height:340px}
+.col h4{font-family:var(--mono);font-size:11px;font-weight:400;letter-spacing:1px;margin-bottom:12px;display:flex;justify-content:space-between}
+.task{background:#fff;color:var(--ink);border-radius:6px;padding:11px;margin-bottom:10px;font-size:12.5px;line-height:1.45;box-shadow:0 6px 14px rgba(0,0,0,.12);transition:transform .25s}
+.task:hover{transform:translateY(-3px) rotate(-1deg)}
+.task small{display:flex;justify-content:space-between;margin-top:8px;font-family:var(--mono);font-size:9.5px;color:#888}
+
+/* 04 AI */
+.ai-card{background:#fff;color:var(--ink);border-radius:10px;overflow:hidden;box-shadow:0 18px 40px rgba(0,0,0,.14);transform:rotate(-1.5deg)}
+.chat{padding:18px;display:flex;flex-direction:column;gap:12px}
+.bub{max-width:85%;padding:11px 14px;border-radius:12px;font-size:13.5px;line-height:1.5}
+.bub.me{align-self:flex-end;background:var(--ink);color:var(--paper);border-bottom-right-radius:3px}
+.bub.ai{align-self:flex-start;background:#f1eee8;border-bottom-left-radius:3px}
+.bub.ai ol{margin:8px 0 0 18px;font-size:13px}
+.bub.ai ol li{margin-bottom:3px}
+.done{align-self:flex-start;font-family:var(--mono);font-size:11px;color:#1f7a46;background:#E3F4EA;padding:4px 10px;border-radius:20px}
+.typing{display:inline-flex;gap:4px;margin-left:6px;vertical-align:middle}
+.typing i{width:5px;height:5px;border-radius:50%;background:#999;animation:blink 1.2s infinite}
+.typing i:nth-child(2){animation-delay:.2s}.typing i:nth-child(3){animation-delay:.4s}
+@keyframes blink{0%,80%,100%{opacity:.25}40%{opacity:1}}
+.logo-chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px;transform:rotate(1deg)}
+.logo-chips span{background:var(--ink);border-radius:30px;padding:9px 16px;display:flex;align-items:center;height:44px}
+.logo-chips img{height:22px;width:auto}
+
+/* 05 webhook */
+.sheet{background:#fff;color:var(--ink);border-radius:8px;overflow:hidden;box-shadow:0 20px 44px rgba(0,0,0,.4)}
+.sheet-top{background:#1f7a46;color:#fff;font-family:var(--mono);font-size:11px;padding:9px 12px;display:flex;justify-content:space-between}
+.payload{font-family:var(--mono);font-size:12px;line-height:1.8;padding:16px 18px;background:#1d1d1d;color:#cfc9bf}
+.payload .k{color:#9ecbff}.payload .s{color:var(--amber)}.payload .p{color:#888}
+.tree{display:flex;flex-direction:column;align-items:center;gap:0;margin-top:28px}
+.tree .node{font-family:var(--mono);font-size:11px;padding:8px 14px;border:2px solid var(--paper);background:var(--ink);white-space:nowrap}
+.tree .node.p{background:var(--signal);border-color:var(--signal);color:#fff}
+.tree .stem{width:2px;height:18px;background:var(--paper)}
+.tree .kids{display:flex;gap:10px;position:relative;padding-top:18px;flex-wrap:wrap;justify-content:center}
+.tree .kids:before{content:"";position:absolute;top:0;left:12%;right:12%;height:2px;background:var(--paper)}
+.tree .kids .node{position:relative}
+.tree .kids .node:before{content:"";position:absolute;top:-20px;left:50%;width:2px;height:18px;background:var(--paper)}
+
+/* 06 A2P */
+.ab-real{background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 20px 44px rgba(0,0,0,.16);transform:rotate(-1deg);cursor:zoom-in;transition:transform .35s}
+.ab-real:hover{transform:rotate(0) translateY(-4px)}
+.ab-real img{width:100%;display:block}
+.af-hint{font-family:var(--mono);font-size:11px;color:var(--body);padding:10px 14px;border-top:1px solid #eee}
+.ab-stats{display:grid;grid-template-columns:repeat(3,1fr);border:2px solid var(--ink);margin-top:24px}
+.ab-stats div{padding:13px 14px;border-right:2px solid var(--ink)}.ab-stats div:last-child{border-right:0}
+.ab-stats b{display:block;font-family:var(--display);font-weight:900;font-size:22px;color:var(--signal);letter-spacing:0;line-height:1.2}
+.ab-stats span{font-family:var(--mono);font-size:10px;text-transform:uppercase}
+.ab-note{font-size:14px;line-height:1.65;color:var(--body);margin-top:14px}
+.ab-real.second{transform:rotate(1.5deg);margin-top:20px}
+
+/* CASE STUDY */
+.case{padding:130px 0}
+.case-top{display:grid;grid-template-columns:1fr 1.1fr;gap:60px;align-items:end;margin-bottom:70px}
+.case-lead{font-size:18px;line-height:1.75;color:var(--body)}
+.case-stats{display:grid;grid-template-columns:repeat(3,1fr);border:2px solid var(--ink);margin-top:28px}
+.case-stats div{padding:16px 18px;border-right:2px solid var(--ink)}.case-stats div:last-child{border-right:0}
+.case-stats b{display:block;font-family:var(--display);font-weight:900;font-size:32px;color:var(--signal);letter-spacing:0;line-height:1.15}
+.case-stats span{font-family:var(--mono);font-size:11px;text-transform:uppercase}
+.case-label{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px;gap:12px;flex-wrap:wrap}
+.case-label .hint{font-family:var(--mono);font-size:11px;color:var(--body)}
+.stack{display:flex;gap:24px;overflow-x:auto;scroll-snap-type:x mandatory;padding:20px 6px 34px;margin:0 -6px;scrollbar-width:thin}
+.st-card{flex:0 0 460px;scroll-snap-align:start;background:#fff;color:var(--ink);padding:12px 12px 16px;box-shadow:0 16px 34px rgba(0,0,0,.13);cursor:zoom-in;position:relative;transition:transform .35s;margin:0}
+.st-card:nth-child(odd){transform:rotate(-1.2deg)}.st-card:nth-child(even){transform:rotate(1.2deg)}
+.st-card:hover{transform:rotate(0) translateY(-8px)}
+.st-card img{width:100%;aspect-ratio:16/10;object-fit:cover;object-position:left top;background:#eee}
+.st-card.phone{flex-basis:300px}
+.st-card.phone img{aspect-ratio:1206/1700;object-position:top}
+.st-card figcaption{margin-top:12px;display:flex;flex-direction:column;gap:3px}
+.st-card figcaption b{font-family:var(--display);font-weight:800;font-size:17px}
+.st-card figcaption span{font-size:12.5px;color:var(--body)}
+.st-n{position:absolute;top:-12px;left:-10px;z-index:2;width:34px;height:34px;border-radius:50%;background:var(--signal);color:#fff;font-family:var(--display);font-weight:900;font-size:13px;display:flex;align-items:center;justify-content:center}
+.case-split{display:grid;grid-template-columns:1.1fr 1fr;gap:70px;align-items:center;margin-top:20px}
+.aplus-frame{background:#fff;border-radius:10px;box-shadow:0 22px 50px rgba(0,0,0,.18);overflow:hidden;transform:rotate(-1.5deg);transition:transform .4s}
+.aplus-frame:hover{transform:rotate(0)}
+.af-view{aspect-ratio:16/10;overflow:hidden;background:#2a2320}
+.af-view video,.af-view img{width:100%;height:100%;object-fit:cover;object-position:top}
+.case-h3{font-family:var(--display);font-size:clamp(36px,4vw,56px);line-height:1.05;letter-spacing:-.01em}
+.case-h3 .thin{font-weight:200}.case-h3 .heavy{font-weight:900;color:var(--signal)}
+.case-desc{font-size:16px;line-height:1.75;color:var(--body);margin-top:20px}
+.dtabs{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:38px}
+.dtab{font-family:var(--display);font-weight:800;font-size:18px;text-align:left;padding:14px 20px;border:2px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer;transition:.2s;line-height:1.25}
+.dtab small{display:block;font-family:var(--mono);font-weight:400;font-size:10.5px;letter-spacing:1px;text-transform:uppercase;color:var(--signal);margin-bottom:4px}
+.dtab:hover{transform:translate(-2px,-2px);box-shadow:4px 4px 0 var(--ink)}
+.dtab.on{background:var(--ink);color:var(--paper)}
+.design{display:none}.design.on{display:block;animation:fadeUp .6s cubic-bezier(.2,.8,.2,1)}
+@keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+.case.dark .case-lead,.case.dark .case-desc{color:#bdb6ab}
+.case.dark .case-stats,.case.dark .case-stats div{border-color:var(--paper)}
+.case.dark .case-label .hint{color:var(--mute)}
+.case.dark .dtab{border-color:var(--paper);color:var(--paper)}
+.case.dark .dtab:hover{box-shadow:4px 4px 0 var(--signal)}
+.case.dark .dtab.on{background:var(--paper);color:var(--ink)}
+.case.dark .st-card{box-shadow:0 18px 40px rgba(0,0,0,.5)}
+.case.dark .aplus-frame{box-shadow:0 22px 50px rgba(0,0,0,.55)}
+
+/* WORK */
+.work{padding:130px 0}
+.filters{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:40px}
+.filters button{font-family:var(--mono);font-size:12px;padding:9px 16px;border:1.5px solid var(--paper);background:transparent;color:var(--paper);cursor:pointer;transition:.2s}
+.filters button.on,.filters button:hover{background:var(--signal);border-color:var(--signal);color:#fff}
+.work-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.w-item{background:var(--ink-2);border:1px solid var(--line);border-radius:10px;overflow:hidden;transition:transform .35s,border-color .35s,opacity .35s}
+.w-item:hover{transform:translateY(-6px) rotate(-.6deg);border-color:var(--signal)}
+.w-item.hide{display:none}
+.w-thumb{aspect-ratio:4/3;position:relative;display:block;overflow:hidden;background:#2a2320}
+.w-thumb img,.w-thumb video{width:100%;height:100%;object-fit:cover;object-position:top;transition:transform .5s}
+.w-item:hover .w-thumb video{transform:scale(1.05)}
+.w-item:hover .w-thumb img{transform:scale(1.05)}
+.w-thumb .ph-note{font-family:var(--mono);font-size:10.5px;position:absolute;bottom:10px;left:12px;background:var(--signal);color:#fff;padding:3px 8px}
+.w-body{padding:20px 20px 24px}
+.w-body .kicker{font-size:10.5px}
+.w-body h3{font-family:var(--display);font-weight:800;font-size:22px;letter-spacing:0;margin:9px 0 9px;line-height:1.2}
+.w-body p{font-size:14px;color:var(--mute);line-height:1.6}
+.w-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.w-tags span{font-family:var(--mono);font-size:10px;padding:3px 8px;background:var(--ink-3);color:#cfc9bf}
+
+/* PROCESS */
+.process{padding:130px 0}
+.steps{display:grid;grid-template-columns:repeat(6,1fr);gap:0;border:2px solid var(--ink)}
+.step{padding:26px 20px 30px;border-right:2px solid var(--ink);position:relative;transition:background .3s,color .3s}
+.step:last-child{border-right:0}
+.step:hover{background:var(--ink);color:var(--paper)}
+.step b{font-family:var(--display);font-weight:900;font-size:46px;color:var(--signal);letter-spacing:0;line-height:1.1}
+.step h4{font-family:var(--display);font-weight:800;font-size:20px;margin:14px 0 8px;line-height:1.2}
+.step p{font-size:13.5px;line-height:1.6;color:var(--body)}
+.step:hover p{color:#bdb6ab}
+
+/* EXPERIENCE */
+.exp{padding:130px 0;overflow:hidden}
+.exp-head{display:grid;grid-template-columns:1.1fr 1fr;gap:60px;align-items:center;margin-bottom:80px}
+.exp-intro{max-width:420px;color:var(--mute);line-height:1.7;margin-top:28px}
+.exp-note{font-family:var(--serif);font-style:italic;font-size:26px;line-height:1.2;color:var(--paper);margin-top:30px;transform:rotate(-3deg);display:inline-block}
+.cutout{position:relative;width:100%;max-width:420px;margin:30px auto 20px}
+.cutout .burst{position:absolute;inset:-9% -12% -6% -12%;background:var(--signal);clip-path:polygon(8% 4%,22% 10%,30% 0,44% 8%,58% 1%,66% 9%,82% 2%,88% 14%,100% 18%,94% 32%,100% 46%,92% 58%,99% 72%,90% 82%,96% 100%,78% 93%,64% 100%,50% 92%,34% 99%,22% 90%,4% 96%,9% 80%,0 66%,7% 52%,1% 38%,8% 26%,0 12%)}
+.cutout img{position:relative;width:100%;aspect-ratio:3/4;object-fit:cover;object-position:50% 15%;clip-path:polygon(3% 2%,97% 0,100% 96%,0 100%);filter:contrast(1.05)}
+.cut-tape{position:absolute;left:-18px;bottom:28px;transform:rotate(-4deg);z-index:2}
+.job{display:grid;grid-template-columns:200px 1fr 1.3fr;gap:40px;padding:36px 0;border-top:1px solid var(--line);align-items:start}
+.job:last-of-type{border-bottom:1px solid var(--line)}
+.job .when{font-family:var(--mono);font-size:12px;color:var(--mute);line-height:1.7;text-transform:uppercase}
+.job h3{font-family:var(--display);font-weight:900;font-size:clamp(28px,3vw,40px);letter-spacing:0;line-height:1.1}
+.job .role{font-family:var(--serif);font-style:italic;font-size:20px;color:var(--signal);margin-top:10px}
+.job ul{list-style:none;font-size:14.5px;color:#bdb6ab;line-height:1.65}
+.job ul li{padding-left:18px;position:relative;margin-bottom:7px}
+.job ul li:before{content:"→";position:absolute;left:0;color:var(--signal);font-size:12px}
+.tools{display:flex;flex-wrap:wrap;gap:10px;margin-top:54px}
+.tools span{font-family:var(--mono);font-size:12px;padding:9px 15px;border:1.5px solid var(--paper);transition:.2s}
+.tools span:hover{background:var(--paper);color:var(--ink);transform:rotate(-2deg)}
+
+/* WHY + FAQ */
+.why-sec{padding:130px 0}
+.why{display:grid;grid-template-columns:repeat(4,1fr);border:2px solid var(--ink)}
+.why div{padding:26px 22px 30px;border-right:2px solid var(--ink);transition:background .3s,color .3s}
+.why div:last-child{border-right:0}
+.why div:hover{background:var(--signal);color:#fff}
+.why b{font-family:var(--mono);font-size:12px;color:var(--signal);letter-spacing:1px}
+.why div:hover b,.why div:hover p{color:#fff}
+.why h4{font-family:var(--display);font-weight:900;font-size:24px;line-height:1.15;margin:16px 0 10px}
+.why p{font-size:14.5px;line-height:1.65;color:var(--body)}
+.faq{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px;margin-top:110px;align-items:start}
+.faq-side p{color:var(--body);margin:20px 0 26px;max-width:340px;line-height:1.7}
+.faq-list{border-top:2px solid var(--ink)}
+.faq-item{border-bottom:2px solid var(--ink)}
+.faq-q{width:100%;display:flex;justify-content:space-between;align-items:center;gap:18px;text-align:left;padding:24px 0;font-family:var(--display);font-weight:800;font-size:clamp(19px,1.9vw,24px);line-height:1.3;background:none;border:0;color:var(--ink);cursor:pointer;transition:color .2s}
+.faq-q:hover{color:var(--signal)}
+.faq-q .pm{flex:0 0 38px;height:38px;border:2px solid var(--ink);display:grid;place-items:center;font-family:var(--mono);font-size:18px;transition:transform .3s,background .3s,color .3s,border-color .3s}
+.faq-q[aria-expanded="true"] .pm{transform:rotate(45deg);background:var(--signal);border-color:var(--signal);color:#fff}
+.faq-a{display:grid;grid-template-rows:0fr;transition:grid-template-rows .35s}
+.faq-a>div{overflow:hidden}
+.faq-a p{padding:0 56px 24px 0;color:var(--body);line-height:1.75}
+.faq-item.open .faq-a{grid-template-rows:1fr}
+
+/* CONTACT */
+.contact{padding:140px 0 60px;position:relative;overflow:hidden}
+.contact h2{font-family:var(--display);font-size:clamp(56px,10vw,156px);line-height:1;letter-spacing:-.01em;text-align:center}
+.contact h2 .thin{font-weight:200;display:block}.contact h2 .heavy{font-weight:900;color:var(--signal);display:block;margin-top:.04em}
+.contact .center{text-align:center}
+.contact .center .tape{transform:rotate(-3deg);margin-top:26px}
+.contact-row{display:flex;justify-content:center;gap:16px;flex-wrap:wrap;margin-top:42px}
+.contact-meta{display:grid;grid-template-columns:1.45fr 1fr 1fr 1fr;gap:0;margin-top:80px;border:2px solid var(--ink)}
+.contact-meta div{padding:22px;border-right:2px solid var(--ink)}
+.contact-meta div:last-child{border-right:0}
+.contact-meta small{font-family:var(--mono);font-size:11px;letter-spacing:1px;color:var(--signal);text-transform:uppercase}
+.contact-meta p{font-size:16px;margin-top:8px;word-break:break-word;line-height:1.5}
+.contact-meta a:hover{color:var(--signal)}
+footer{background:var(--ink);color:var(--mute);padding:28px 0;font-family:var(--mono);font-size:12px}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+footer a:hover{color:var(--signal)}
+
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:100;background:rgba(14,14,14,.92);display:none;align-items:center;justify-content:center;padding:30px}
+.lb.open{display:flex}
+.lb-in{max-width:min(1100px,94vw);max-height:90vh;overflow:auto}
+.lb-in img{width:100%;height:auto;display:block;background:#fff}
+.lb-x{position:absolute;top:16px;right:22px;background:var(--signal);color:#fff;border:0;width:44px;height:44px;font-size:28px;cursor:pointer}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(34px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1)}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none}.marquee .track,.wire,.typing i{animation:none}html{scroll-behavior:auto}}
+
+/* RESPONSIVE */
+@media (max-width:1080px){
+  .f5,.f6,.f7{display:none}
+  .f1{width:170px;left:2%}.f2{width:180px;right:2%}.f3{width:210px}.f4{width:210px}
+  .steps{grid-template-columns:repeat(3,1fr)}
+  .step:nth-child(3){border-right:0}.step:nth-child(-n+3){border-bottom:2px solid var(--ink)}
+  .work-grid{grid-template-columns:repeat(2,1fr)}
+  .job{grid-template-columns:1fr;gap:12px}
+  .exp-head{grid-template-columns:1fr;gap:40px}
+  .contact-meta{grid-template-columns:1fr 1fr}
+  .contact-meta div:nth-child(2){border-right:0}
+  .contact-meta div:nth-child(-n+2){border-bottom:2px solid var(--ink)}
+  .cutout{max-width:340px;width:82%}
+  .cut-tape{left:-6px}
+  .why{grid-template-columns:1fr 1fr}
+  .why div:nth-child(2){border-right:0}.why div:nth-child(-n+2){border-bottom:2px solid var(--ink)}
+}
+@media (max-width:860px){
+  .nav-links{display:none;position:absolute;top:74px;left:0;right:0;flex-direction:column;gap:0;background:var(--ink);border-bottom:1px solid var(--line)}
+  .nav-links.open{display:flex}
+  .nav-links a{padding:16px 28px;border-top:1px solid var(--line)}
+  .nav-cta{display:none}.burger{display:block}
+  .about-grid,.skill-grid,.case-top,.case-split,.faq{grid-template-columns:1fr;gap:50px}
+  .skill.flip .skill-grid>div:first-child{order:0}
+  .polaroids{height:480px}
+  .f1{width:130px;top:96px;left:3%}
+  .f2{width:140px;top:104px;right:3%}
+  .f3,.f4{display:none}
+  .hero-title{padding-top:210px}
+  .st-card{flex-basis:300px}
+}
+@media (max-width:600px){
+  .wrap{padding:0 20px}
+  .work-grid{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr 1fr}
+  .step{border-right:2px solid var(--ink)!important;border-bottom:2px solid var(--ink)}
+  .step:nth-child(2n){border-right:0!important}
+  .stats,.contact-meta,.case-stats,.ab-stats,.why{grid-template-columns:1fr}
+  .stat,.contact-meta div,.case-stats div,.ab-stats div,.why div{border-right:0!important;border-bottom:2px solid var(--ink)}
+  .case.dark .case-stats div{border-color:var(--paper)}
+  .stat:last-child,.contact-meta div:last-child,.case-stats div:last-child,.ab-stats div:last-child,.why div:last-child{border-bottom:0}
+  .kanban{grid-template-columns:1fr}.col{min-height:auto}
+  .creative-wall{gap:12px}.pg{height:160px}
+  .p1{width:250px;left:0}.p1 .ph{height:310px}.p2{width:160px}.p2 .ph{height:150px}.p3{width:200px;bottom:-70px;right:-2%}.p3 .ph{height:110px}.polaroids{margin-bottom:70px}
+  .st-card{flex-basis:260px}
+  .faq-a p{padding-right:0}
+  .dtabs{display:grid;grid-template-columns:1fr 1fr;gap:8px}.dtab{font-size:14.5px;padding:11px 12px}
+  .hero-title .meta{font-size:16px}
+}
+</style>
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<nav id="nav">
+  <div class="wrap nav-in">
+    <a href="#top" class="logo">shie<small>gohighlevel studio</small></a>
+    <div class="nav-links" id="navLinks">
+      <a href="#skills">Skills</a>
+      <a href="#work">Work</a>
+      <a href="#process">Process</a>
+      <a href="#experience">Experience</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <a href="#contact" class="btn nav-cta">Hire me ↗</a>
+    <button class="burger" id="burger" aria-label="Open menu">☰</button>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero grid-dark" id="top">
+  <svg class="cord" viewBox="0 0 1440 900" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M140 320 C 320 620, 520 140, 720 470 S 1100 260, 1300 640" fill="none" stroke="#353535" stroke-width="2"/>
+    <path d="M220 820 C 420 700, 620 860, 900 760 S 1200 820, 1420 700" fill="none" stroke="#2f2f2f" stroke-width="2"/>
+  </svg>
+
+  <!-- floating desk: logos (no frame) + two GHL cards; they follow the mouse -->
+  <div class="float logo-f f1" data-depth="18"><img src="/v2/img/6629364d43.webp" alt="Claude logo"></div>
+  <div class="float logo-f f2" data-depth="-14"><img src="/v2/img/74f9ba1d22.webp" alt="HighLevel logo"></div>
+  <div class="float f3" data-depth="12">
+    <div class="lbl" style="margin:0 0 7px;color:var(--amber)">WORKFLOW · NEW LEAD</div>
+    <div class="mono-lines">trigger: <b>form_submitted</b><br>wait: <b>5 min</b><br>action: send_sms → lead<br>if replied: <b>move → Booked</b></div>
+  </div>
+  <div class="float f4" data-depth="-10">
+    <div class="lbl" style="margin:0;color:var(--signal)">PIPELINE · SALES</div>
+    <div style="font-family:var(--display);font-weight:900;font-size:16px;margin-top:6px;line-height:1.2">Lead → Booked → Won</div>
+    <div class="stage-row"><div>NEW</div><div class="on">BOOKED</div><div>SHOWED</div><div>WON</div></div>
+  </div>
+  <div class="float logo-f f5" data-depth="22"><img src="/v2/img/197badd4ba.webp" alt="ChatGPT logo"></div>
+  <div class="float logo-f f6" data-depth="-20"><img src="/v2/img/b4a54b3e39.webp" alt="Webhook logo"></div>
+  <div class="float logo-f f7" data-depth="16"><img src="/v2/img/8b50a33d0a.webp" alt="MCP — Model Context Protocol logo"></div>
+
+  <div class="hero-title rv">
+    <div class="tape name">SHIELA MACAPAGAL</div>
+    <div class="ttl"><div class="meta"><span>SPECIALIST</span><span>©2026</span></div>
+    <h1><span>GoHigh</span><span>Level</span></h1></div>
+    <div class="tagline">BUILD. AUTOMATE. SCALE. <span style="white-space:nowrap">AI AUTOMATION.</span></div>
+    <p>Websites, funnels, CRM and automations built entirely inside GoHighLevel, connected into one system that works while you sleep.</p>
+    <div class="hero-cta">
+      <a href="#work" class="btn">See the work ↘</a>
+      <a href="https://calendar.app.google/uGboPxZ85sW2tMBa9" target="_blank" rel="noopener" class="btn ghost">Book a call</a>
+    </div>
+  </div>
+</header>
+
+<!-- ============ MARQUEE ============ -->
+<div class="marquee" aria-hidden="true"><div class="track">
+  <span>Websites</span><span>Funnels</span><span>CRM</span><span>Workflows</span><span>Pipelines</span><span>AI automation</span><span>Webhooks</span><span>A2P 10DLC</span><span>Calendars</span><span>Payments</span>
+  <span>Websites</span><span>Funnels</span><span>CRM</span><span>Workflows</span><span>Pipelines</span><span>AI automation</span><span>Webhooks</span><span>A2P 10DLC</span><span>Calendars</span><span>Payments</span>
+</div></div>
+
+<!-- ============ ABOUT ============ -->
+<section class="about grid-paper" id="about">
+  <div class="wrap about-grid">
+    <div class="rv">
+      <div class="kicker">Hello / Kumusta</div>
+      <h2 class="hello" style="margin-top:16px"><span class="thin">Hi! I'm</span><br><em>Shiela.</em></h2>
+      <div class="badges">
+        <span class="tape dark" style="transform:rotate(-2deg)">GoHighLevel Specialist</span>
+        <span class="tape red" style="transform:rotate(2deg)">AI automation</span>
+      </div>
+      <p class="lead">I'm a GoHighLevel Specialist from Malolos City, Philippines. I help coaches, agencies, service providers and small businesses launch websites and connect every part of the business inside GoHighLevel: CRM, funnels, forms, calendars, payments, workflows and SMS compliance. Systems that work together, not just pretty pages.</p>
+      <div class="stats">
+        <div class="stat"><b>1+ YR</b><strong>GoHighLevel Expert</strong><span>Websites, funnels, CRM &amp; automations</span></div>
+        <div class="stat"><b>A2P ✓</b><strong>A2P Approved Projects</strong><span>Brand &amp; campaign registration</span></div>
+        <div class="stat"><b>20+ <small>clients</small></b><strong>Agency Experience</strong><span>Supporting agencies that manage multiple client accounts</span></div>
+      </div>
+    </div>
+    <div class="polaroids rv">
+      <div class="pola p1"><div class="ph" style="padding:0"><img src="/v2/img/5b074a91c4.jpg" alt="Shiela Macapagal portrait" style="object-position:50% 20%"></div><div class="cap">that's me :)</div></div>
+      <div class="pola p2"><div class="ph"><div class="mini-flow"><i>form submitted</i><em>↓</em><i>send SMS</i><em>↓</em><i>book call ✓</i></div></div><div class="cap">workflows</div></div>
+      <div class="pola p3"><div class="ph"><div class="glyph" style="font-size:30px">Lead → Won</div></div><div class="cap">pipelines</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee paper rev" aria-hidden="true"><div class="track">
+  <span>Connected</span><span>Automated</span><span>Compliant</span><span>On brief</span><span>On time</span>
+  <span>Connected</span><span>Automated</span><span>Compliant</span><span>On brief</span><span>On time</span>
+  <span>Connected</span><span>Automated</span><span>Compliant</span><span>On brief</span><span>On time</span>
+</div></div>
+
+<!-- ============ SKILLS ============ -->
+<div id="skills"></div>
+
+<!-- 01 AUTOMATION -->
+<section class="skill grid-dark">
+  <div class="wrap skill-grid">
+    <div class="rv">
+      <div class="num">01 / 06</div>
+      <h2><span class="thin">Automation &amp;</span><span class="heavy">workflows</span></h2>
+      <span class="tape">set it once, it runs</span>
+      <p class="desc">Lead comes in, the system takes over. I build GoHighLevel workflows that follow up, remind, route and notify, so nothing falls through the cracks and nobody has to do it by hand.</p>
+      <ul class="list">
+        <li>Triggers &amp; actions, conditional logic and wait steps</li>
+        <li>Lead nurturing and follow-up sequences (SMS + email)</li>
+        <li>Appointment reminders and no-show recovery</li>
+        <li>Internal notifications, lead routing and team assignment</li>
+      </ul>
+    </div>
+    <div class="board rv">
+      <div class="flow">
+        <div class="af-bar"><i></i><i></i><i></i><span>automation · workflow builder</span></div>
+        <div class="flow-body">
+          <div class="fnode trig"><span class="ic" style="background:var(--signal)">⚡</span><div><small>Trigger</small>Form submitted: Free consultation</div></div>
+          <div class="wire"></div>
+          <div class="fnode"><span class="ic" style="background:#3b82f6">✉</span><div><small>Action</small>Send SMS + email confirmation</div></div>
+          <div class="wire"></div>
+          <div class="fnode"><span class="ic" style="background:#8b5cf6">◷</span><div><small>Wait</small>Until appointment − 24 hrs</div></div>
+          <div class="wire"></div>
+          <div class="fnode"><span class="ic" style="background:#f2a33a">?</span><div><small>If / else</small>Appointment confirmed?</div></div>
+          <div class="branch">
+            <div class="fnode"><span class="ic" style="background:#1f7a46">✓</span><div><small>Yes</small>Move to Booked</div></div>
+            <div class="fnode"><span class="ic" style="background:#555">↺</span><div><small>No</small>Reminder + notify team</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 02 WEBSITES & FUNNELS -->
+<section class="skill grid-paper flip">
+  <div class="wrap skill-grid">
+    <div class="rv">
+      <div class="num">02 / 06</div>
+      <h2><span class="thin">Websites &amp;</span><span class="heavy">funnels</span></h2>
+      <span class="tape dark">pages that capture leads</span>
+      <p class="desc">Custom GoHighLevel websites and funnels that look on-brand and do a job: capture the lead, take the payment, book the call, and pass everything to the CRM.</p>
+      <ul class="list">
+        <li>Multi-page websites with responsive design, SEO setup and custom CSS</li>
+        <li>Lead generation and sales funnels, order forms, upsells and downsells</li>
+        <li>Custom forms and surveys with conditional logic and custom fields</li>
+        <li>Calendars, booking pages and Stripe payments, invoices and links</li>
+      </ul>
+    </div>
+    <div class="board rv">
+      <div class="creative-wall">
+        <div class="card"><div class="pg"><div class="hd"><b>BRAND</b><i></i></div><div class="hero-b">Get your <span>free</span> guide</div><div class="ln"></div><div class="inp"></div><div class="inp"></div><div class="cta">SEND IT TO ME</div></div><div class="lbl"><span>OPT-IN PAGE</span><span>STEP 1</span></div></div>
+        <div class="card"><div class="pg"><div class="hd"><b>BRAND</b><i></i></div><div class="hero-b">The <span>offer</span> that fixes it</div><div class="ln"></div><div class="ln" style="width:80%"></div><div class="ln" style="width:60%"></div><div class="cta">YES, I WANT IN</div></div><div class="lbl"><span>SALES PAGE</span><span>STEP 2</span></div></div>
+        <div class="card"><div class="pg"><div class="hd"><b>CHECKOUT</b><i></i></div><div class="inp"></div><div class="inp"></div><div class="price"><span>Program</span><span>$497</span></div><div class="price" style="border-color:var(--amber)"><span>+ Bump offer</span><span>$47</span></div><div class="cta">COMPLETE ORDER</div></div><div class="lbl"><span>ORDER FORM</span><span>STRIPE</span></div></div>
+        <div class="card"><div class="pg"><div class="hd"><b>BRAND</b><i></i></div><div class="check">✓</div><div class="hero-b" style="text-align:center;background:#fff;color:var(--ink)">You're <span>in!</span></div><div class="ln" style="width:70%;margin:0 auto"></div><div class="cta">BOOK YOUR KICKOFF CALL</div></div><div class="lbl"><span>THANK-YOU</span><span>STEP 4</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 03 CRM & PIPELINES -->
+<section class="skill grid-dark">
+  <div class="wrap skill-grid">
+    <div class="rv">
+      <div class="num">03 / 06</div>
+      <h2><span class="thin">CRM &amp;</span><span class="heavy">pipelines</span></h2>
+      <span class="tape">every lead, one place</span>
+      <p class="desc">A clean CRM is a calm business. I set up pipelines, stages, tags and smart lists so you always know where every lead stands, who owns it, and what happens next.</p>
+      <ul class="list">
+        <li>Pipelines, opportunity stages and lead tracking</li>
+        <li>Tags, custom fields, smart lists and segmentation</li>
+        <li>Sub-account setup, snapshots, user permissions and white-label</li>
+        <li>Contact import, migration and DND compliance</li>
+      </ul>
+    </div>
+    <div class="board rv">
+      <div class="kanban">
+        <div class="col"><h4><span>NEW LEAD</span><span>3</span></h4>
+          <div class="task"><span class="pill" style="background:#FDE7E3;color:var(--signal)">FB lead form</span><br>New inquiry, auto-SMS sent in 1 min<small><span>Service business</span><span>TODAY</span></small></div>
+          <div class="task"><span class="pill" style="background:#FFF1DC;color:#8a5400">Website form</span><br>Free consultation request<small><span>Coaching</span><span>TODAY</span></small></div>
+        </div>
+        <div class="col"><h4><span>BOOKED</span><span>2</span></h4>
+          <div class="task"><span class="pill" style="background:#E9E6FF;color:#4a37c9">Calendar</span><br>Discovery call, reminders queued<small><span>Agency client</span><span>THU</span></small></div>
+          <div class="task"><span class="pill" style="background:#E9E6FF;color:#4a37c9">Calendar</span><br>Inspection booked from landing page<small><span>Local service</span><span>FRI</span></small></div>
+        </div>
+        <div class="col"><h4><span>WON ✓</span><span>5</span></h4>
+          <div class="task" style="opacity:.8"><span class="pill" style="background:#E3F4EA;color:#1f7a46">Invoice paid</span><br>Stripe payment, onboarding started<small><span>Coaching</span><span>DONE</span></small></div>
+          <div class="task" style="opacity:.8"><span class="pill" style="background:#E3F4EA;color:#1f7a46">Assigned</span><br>Routed to team member<small><span>Agency client</span><span>DONE</span></small></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 04 AI AUTOMATION -->
+<section class="skill grid-paper flip">
+  <div class="wrap skill-grid">
+    <div class="rv">
+      <div class="num">04 / 06</div>
+      <h2><span class="thin">AI</span><span class="heavy">automation</span></h2>
+      <span class="tape dark">smarter systems, faster</span>
+      <p class="desc">I use AI tools to plan workflow logic, troubleshoot faster, draft content and document systems, and I connect AI into business workflows so the busywork handles itself.</p>
+      <ul class="list">
+        <li>AI-assisted workflow building and optimization</li>
+        <li>AI-assisted troubleshooting and process improvement</li>
+        <li>AI-assisted content creation and system documentation</li>
+        <li>AI integrations with business workflows (ChatGPT, Claude, MCP)</li>
+      </ul>
+    </div>
+    <div class="board rv">
+      <div class="ai-card">
+        <div class="af-bar"><i></i><i></i><i></i><span>ai assistant · workflow planning</span></div>
+        <div class="chat">
+          <div class="bub me">Map a follow-up for leads who book but don't show.</div>
+          <div class="bub ai">Here's the flow:
+            <ol><li>Trigger: appointment status = no-show</li><li>Wait 15 min, send a friendly reschedule SMS</li><li>No reply in 24 hrs: email with booking link</li><li>Still nothing: tag "cold" + notify owner</li></ol>
+          </div>
+          <div class="done">✓ Built in GoHighLevel &amp; tested</div>
+          <div class="bub me" style="opacity:.75">Now write the SMS copy <span class="typing"><i></i><i></i><i></i></span></div>
+        </div>
+      </div>
+      <div class="logo-chips">
+        <span><img src="/v2/img/6629364d43.webp" alt="Claude"></span>
+        <span><img src="/v2/img/197badd4ba.webp" alt="ChatGPT"></span>
+        <span><img src="/v2/img/8b50a33d0a.webp" alt="MCP"></span>
+        <span><img src="/v2/img/b4a54b3e39.webp" alt="Webhooks"></span>
+        <span><img src="/v2/img/74f9ba1d22.webp" alt="HighLevel"></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 05 INTEGRATIONS -->
+<section class="skill grid-dark">
+  <div class="wrap skill-grid">
+    <div class="rv">
+      <div class="num">05 / 06</div>
+      <h2><span class="thin">Webhooks &amp;</span><span class="heavy">integrations</span></h2>
+      <span class="tape">one form, every tool</span>
+      <p class="desc">When GoHighLevel needs to talk to other tools, I connect it. Webhooks, REST API calls and Zapier or Make scenarios move the data where it needs to go, the moment it happens.</p>
+      <ul class="list">
+        <li>Inbound and outbound webhooks, REST API connections</li>
+        <li>Zapier and Make.com scenarios for third-party tools</li>
+        <li>Lead data to Google Sheets, email and SMS alerts</li>
+        <li>Testing every trigger before and after launch</li>
+      </ul>
+    </div>
+    <div class="board rv">
+      <div class="sheet">
+        <div class="sheet-top"><span>POST /hooks/new-lead</span><span>● 200 OK</span></div>
+        <div class="payload">
+          <span class="p">{</span><br>
+          &nbsp;&nbsp;<span class="k">"source"</span>: <span class="s">"facebook_lead_form"</span>,<br>
+          &nbsp;&nbsp;<span class="k">"first_name"</span>: <span class="s">"Jamie"</span>,<br>
+          &nbsp;&nbsp;<span class="k">"phone"</span>: <span class="s">"+1 480 •••• ••12"</span>,<br>
+          &nbsp;&nbsp;<span class="k">"tags"</span>: [<span class="s">"new-lead"</span>, <span class="s">"sms-opt-in"</span>],<br>
+          &nbsp;&nbsp;<span class="k">"pipeline_stage"</span>: <span class="s">"New Lead"</span><br>
+          <span class="p">}</span>
+        </div>
+      </div>
+      <div class="tree">
+        <div class="node p">LEAD FORM SUBMITTED</div>
+        <div class="stem"></div>
+        <div class="node">GHL WORKFLOW + WEBHOOK</div>
+        <div class="stem"></div>
+        <div class="kids"><div class="node">Google Sheets</div><div class="node">Email alert</div><div class="node">SMS alert</div><div class="node">Zapier / Make</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 06 A2P -->
+<section id="a2p" class="skill grid-paper flip">
+  <div class="wrap skill-grid">
+    <div class="rv">
+      <div class="num">06 / 06</div>
+      <h2><span class="thin">A2P 10DLC &amp;</span><span class="heavy">SMS compliance</span></h2>
+      <span class="tape dark">officially approved</span>
+      <p class="desc">Texting leads only works if your messages get delivered. I handle A2P 10DLC registration end to end inside GoHighLevel, from business verification to the workflows that send the texts.</p>
+      <ul class="list">
+        <li>Business entity and EIN verification</li>
+        <li>Brand and campaign registration</li>
+        <li>Opt-in language and SMS compliance</li>
+        <li>Twilio / LC phone setup and workflow configuration</li>
+      </ul>
+    </div>
+    <div class="board rv">
+      <div class="ab-real" data-full="">
+        <div class="af-bar"><i></i><i></i><i></i><span>gohighlevel · a2p messaging</span></div>
+        <img src="/v2/img/d4a2be97f1.jpg" alt="A2P Messaging brand status and campaign status both Approved" loading="lazy">
+        <div class="af-hint">Real approval · click to enlarge</div>
+      </div>
+      <div class="ab-real second" data-full="">
+        <div class="af-bar"><i></i><i></i><i></i><span>gohighlevel · phone system</span></div>
+        <img src="/v2/img/4ff184a24e.jpg" alt="GoHighLevel Phone System showing 'You are now A2P 10DLC compliant' and an A2P Verified number" loading="lazy">
+        <div class="af-hint">A2P verified number · click to enlarge</div>
+      </div>
+      <div class="ab-stats">
+        <div><b>Brand ✓</b><span>Approved</span></div>
+        <div><b>Campaign ✓</b><span>Approved</span></div>
+        <div><b>Number ✓</b><span>A2P verified</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CASE STUDY: CLIENT WEBSITES ============ -->
+<section class="case grid-paper" id="case-websites">
+  <div class="wrap">
+    <div class="case-top">
+      <div class="rv">
+        <div class="kicker">Featured projects 01</div>
+        <h2 class="big" style="margin-top:16px"><span class="thin">Client</span><br><span class="heavy">builds</span></h2>
+        <span class="tape dark" style="transform:rotate(-2deg);margin-top:20px">built in GoHighLevel</span>
+      </div>
+      <div class="rv">
+        <p class="case-lead">Six client websites and landing pages, each built inside GoHighLevel so the pages, forms and CRM work as one system. Pick a project to watch the real build.</p>
+        <div class="case-stats"><div><b>06</b><span>Sites &amp; landing pages</span></div><div><b>GHL</b><span>Built end to end</span></div><div><b>+AI</b><span>Chatbot on one site</span></div></div>
+      </div>
+    </div>
+    <div class="dtabs rv" role="tablist">
+      <button class="dtab on" data-d="w1" role="tab"><small>Project 01</small>Floor Coverings Intl.</button>
+      <button class="dtab" data-d="w2" role="tab"><small>Project 02</small>Dire Restoration</button>
+      <button class="dtab" data-d="w3" role="tab"><small>Project 03</small>Phoenix Signs &amp; Apparel</button>
+      <button class="dtab" data-d="w4" role="tab"><small>Project 04</small>Growth Bridge Network</button>
+      <button class="dtab" data-d="w5" role="tab"><small>Project 05</small>Accession Grant Writing</button>
+      <button class="dtab" data-d="w6" role="tab"><small>Project 06</small>Web Course</button>
+    </div>
+    <div class="designs rv">
+      <div class="design on" id="w1" role="tabpanel">
+        <div class="case-split">
+          <div class="aplus-frame"><div class="af-bar"><i></i><i></i><i></i><span>floor coverings intl. · live build</span></div><div class="af-view"><video data-vid="fci-mesa" poster="/v2/img/e163a97a54.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Floor Coverings Intl. screen recording"></video></div></div>
+          <div>
+            <div class="num">Flooring · lead-gen landing page</div>
+            <h3 class="case-h3"><span class="thin">Floor Coverings</span><br><span class="heavy">International</span></h3>
+            <p class="case-desc">An "Ask Your Flooring Questions" landing page for a flooring company in Mesa, Arizona. Homeowners can ask the local flooring expert a question, request a free in-home estimate or call right away, with Google reviews, the most common questions and a meet-the-expert section to build trust.</p>
+            <div class="tags"><span>Landing page</span><span>Lead gen</span><span>GoHighLevel</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="design" id="w2" role="tabpanel">
+        <div class="case-split">
+          <div class="aplus-frame"><div class="af-bar"><i></i><i></i><i></i><span>dire restoration · live build</span></div><div class="af-view"><video data-vid="dire-restoration" poster="/v2/img/e65d4d2596.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Dire Restoration screen recording"></video></div></div>
+          <div>
+            <div class="num">Water damage · lead-gen landing page</div>
+            <h3 class="case-h3"><span class="thin">Dire</span><br><span class="heavy">Restoration</span></h3>
+            <p class="case-desc">A Free Water Damage Inspection landing page for a restoration company serving Gilbert and Queen Creek. A short claim form, the hidden warning signs of water damage, and clear booking and call buttons. Built to match the client's branding, with form leads sent into GoHighLevel through an inbound webhook workflow.</p>
+            <div class="tags"><span>Landing page</span><span>Webhook</span><span>GoHighLevel</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="design" id="w3" role="tabpanel">
+        <div class="case-split">
+          <div class="aplus-frame"><div class="af-bar"><i></i><i></i><i></i><span>phoenix signs &amp; apparel · live build</span></div><div class="af-view"><video data-vid="phoenix-signs-apparel" poster="/v2/img/f391fcbaee.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Phoenix Signs &amp; Apparel screen recording"></video></div></div>
+          <div>
+            <div class="num">B2B branding &amp; printing</div>
+            <h3 class="case-h3"><span class="thin">Phoenix Signs</span><br><span class="heavy">&amp; Apparel</span></h3>
+            <p class="case-desc">Phoenix Signs &amp; Apparel is a B2B local branding and printing company that helps Arizona businesses increase visibility and maintain a professional brand presence through vehicle wraps and decals, storefront signs, window graphics, custom apparel, promotional printing, and related branding products.</p>
+            <div class="tags"><span>Website</span><span>AI chatbot</span><span>GoHighLevel</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="design" id="w4" role="tabpanel">
+        <div class="case-split">
+          <div class="aplus-frame"><div class="af-bar"><i></i><i></i><i></i><span>growth bridge network · live build</span></div><div class="af-view"><video data-vid="growth-bridge-network" poster="/v2/img/4626cdf9d0.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Growth Bridge Network screen recording"></video></div></div>
+          <div>
+            <div class="num">Business networking community</div>
+            <h3 class="case-h3"><span class="thin">Growth Bridge</span><br><span class="heavy">Network</span></h3>
+            <p class="case-desc">GBN brings business owners into curated groups where they can build relationships, exchange referrals, create partnerships, improve their businesses, and gain access to new opportunities.</p>
+            <div class="tags"><span>Website</span><span>GoHighLevel</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="design" id="w5" role="tabpanel">
+        <div class="case-split">
+          <div class="aplus-frame"><div class="af-bar"><i></i><i></i><i></i><span>accession grant writing · live build</span></div><div class="af-view"><video data-vid="accession-grant-writing" poster="/v2/img/b79ad2e4ac.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Accession Grant Writing screen recording"></video></div></div>
+          <div>
+            <div class="num">Grant writing for museums</div>
+            <h3 class="case-h3"><span class="thin">Accession</span><br><span class="heavy">Grant Writing</span></h3>
+            <p class="case-desc">Museums need money to fund programs, exhibits, renovations, preservation, education, and other projects. Accession helps them identify where that money may be available, prepare stronger applications, and manage the grant process.</p>
+            <div class="tags"><span>Website</span><span>GoHighLevel</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="design" id="w6" role="tabpanel">
+        <div class="case-split">
+          <div class="aplus-frame"><div class="af-bar"><i></i><i></i><i></i><span>web course · live build</span></div><div class="af-view"><video data-vid="web-course" poster="/v2/img/ebb2ed52ad.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Web Course screen recording"></video></div></div>
+          <div>
+            <div class="num">Marketing course website</div>
+            <h3 class="case-h3"><span class="thin">Web</span><br><span class="heavy">Course</span></h3>
+            <p class="case-desc">A nine-page personal brand website for a marketing coach, built inside a GoHighLevel funnel: Home, About, Courses, Free Resources, Coaching, Results, Blog, Contact and Work With Me, with navigation linked across every page and a free-checklist lead magnet.</p>
+            <div class="tags"><span>Website</span><span>Funnel</span><span>GoHighLevel</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CASE STUDY: SYSTEMS & TOOLS ============ -->
+<section class="case grid-dark dark" id="case-systems">
+  <div class="wrap">
+    <div class="case-top">
+      <div class="rv">
+        <div class="kicker">Featured projects 02</div>
+        <h2 class="big" style="margin-top:16px"><span class="thin">Systems</span><br><span class="heavy">&amp; tools</span></h2>
+        <span class="tape" style="transform:rotate(-2deg);margin-top:20px">built for real operations</span>
+      </div>
+      <div class="rv">
+        <p class="case-lead">Beyond client sites, I design and build tools that keep work organized: one for running an agency's content pipeline, one for running my own finances.</p>
+        <div class="case-stats"><div><b>02</b><span>Tools built</span></div><div><b>05</b><span>Pipeline stages tracked</span></div><div><b>☀/☾</b><span>Light &amp; dark modes</span></div></div>
+      </div>
+    </div>
+    <div class="dtabs rv" role="tablist">
+      <button class="dtab on" data-d="s1" role="tab"><small>Project 05</small>Content Ops Dashboard</button>
+      <button class="dtab" data-d="s2" role="tab"><small>Project 06</small>Personal Finance Tracker</button>
+    </div>
+    <div class="designs rv">
+      <div class="design on" id="s1" role="tabpanel">
+        <div class="case-label"><span class="num" style="margin:0">Content Ops Dashboard · 2 views</span><span class="hint">Scroll sideways · click to enlarge</span></div>
+        <div class="stack">
+          <figure class="st-card" data-full=""><span class="st-n">01</span><img src="/v2/img/ecbe565cf0.jpg" alt="Content Ops dashboard overview" loading="lazy"><figcaption><b>Dashboard</b><span>Weekly stats, progress, status breakdown and designer workload</span></figcaption></figure>
+          <figure class="st-card" data-full=""><span class="st-n">02</span><img src="/v2/img/2ad2352549.jpg" alt="Content Ops weekly board by designer" loading="lazy"><figcaption><b>Weekly board</b><span>Each designer's clients with post, reels and revision checkboxes</span></figcaption></figure>
+        </div>
+        <div class="case-split" style="grid-template-columns:1fr">
+          <div>
+            <div class="num">Agency system · internal tool</div>
+            <h3 class="case-h3"><span class="thin">Every designer,</span><br><span class="heavy">every deadline.</span></h3>
+            <p class="case-desc" style="max-width:760px">A content operations system I built for the agency to track every graphic designer's daily and weekly output. Each client moves through a Design → Review → Approval → Scheduling → Publish pipeline, with live completion rates, revision flags, overdue alerts, and a per-designer workload view — so the team always knows what's scheduled, what's stuck, and who needs support.</p>
+            <div class="tags"><span>Internal tool</span><span>Dashboard</span><span>Team tracking</span><span>Workflow pipeline</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="design" id="s2" role="tabpanel">
+        <div class="case-label"><span class="num" style="margin:0">Personal Finance Tracker · 2 modes</span><span class="hint">Scroll sideways · click to enlarge</span></div>
+        <div class="stack">
+          <figure class="st-card phone" data-full=""><span class="st-n">01</span><img src="/v2/img/2505b76b75.jpg" alt="Finance tracker overview in light mode" loading="lazy"><figcaption><b>Light mode</b><span>Total balance, income, bills due and accounts</span></figcaption></figure>
+          <figure class="st-card phone" data-full=""><span class="st-n">02</span><img src="/v2/img/38adace234.jpg" alt="Finance tracker overview in dark mode" loading="lazy"><figcaption><b>Dark mode</b><span>The same overview in a matching dark theme</span></figcaption></figure>
+        </div>
+        <div class="case-split" style="grid-template-columns:1fr">
+          <div>
+            <div class="num">Finance app · web app</div>
+            <h3 class="case-h3"><span class="thin">Every account,</span><br><span class="heavy">one screen.</span></h3>
+            <p class="case-desc" style="max-width:760px">A mobile-first finance app I designed and built to see every bank account and e-wallet in one place. It tracks total balance, monthly income, bills due before payday, overdue payments, and savings goals — with a clean light mode and a matching dark mode.</p>
+            <div class="tags"><span>Web app</span><span>Budgeting</span><span>Mobile-first</span><span>Light &amp; dark mode</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee paper" aria-hidden="true"><div class="track">
+  <span>More work</span><span>Selected projects</span><span>More work</span><span>Selected projects</span>
+  <span>More work</span><span>Selected projects</span><span>More work</span><span>Selected projects</span>
+</div></div>
+
+<!-- ============ WORK ============ -->
+<section class="work grid-dark" id="work">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <h2 class="big"><span class="thin">Selected</span><br><span class="heavy">work</span></h2>
+      <p>Client websites, internal systems and compliance work, all in one place. Filter by what you need.</p>
+    </div>
+    <div class="filters rv" id="filters">
+      <button class="on" data-f="all">All</button>
+      <button data-f="web">Websites</button>
+      <button data-f="lp">Landing pages</button>
+      <button data-f="sys">Systems</button>
+      <button data-f="ai">AI</button>
+      <button data-f="sms">SMS &amp; A2P</button>
+    </div>
+    <div class="work-grid">
+      <article class="w-item rv" data-cat="web lp">
+        <a href="#case-websites" data-tab="w1" class="w-thumb"><video data-vid="fci-mesa" poster="/v2/img/e163a97a54.jpg" autoplay muted loop playsinline preload="none" aria-label="Floor Coverings Intl. preview"></video><span class="ph-note">CASE STUDY ↗</span></a>
+        <div class="w-body"><div class="kicker">Flooring · lead-gen landing page</div><h3>Floor Coverings Intl.</h3><p>Lead-gen landing page for a flooring company in Mesa, AZ.</p><div class="w-tags"><span>Landing page</span><span>Lead gen</span></div></div>
+      </article>
+      <article class="w-item rv" data-cat="web lp">
+        <a href="#case-websites" data-tab="w2" class="w-thumb"><video data-vid="dire-restoration" poster="/v2/img/e65d4d2596.jpg" autoplay muted loop playsinline preload="none" aria-label="Dire Restoration preview"></video><span class="ph-note">CASE STUDY ↗</span></a>
+        <div class="w-body"><div class="kicker">Water damage · lead-gen landing page</div><h3>Dire Restoration</h3><p>Free inspection landing page with leads flowing into GHL by webhook.</p><div class="w-tags"><span>Landing page</span><span>Webhook</span></div></div>
+      </article>
+      <article class="w-item rv" data-cat="web ai">
+        <a href="#case-websites" data-tab="w3" class="w-thumb"><video data-vid="phoenix-signs-apparel" poster="/v2/img/f391fcbaee.jpg" autoplay muted loop playsinline preload="none" aria-label="Phoenix Signs &amp; Apparel preview"></video><span class="ph-note">CASE STUDY ↗</span></a>
+        <div class="w-body"><div class="kicker">B2B branding &amp; printing</div><h3>Phoenix Signs &amp; Apparel</h3><p>Website plus an AI chatbot for an Arizona branding company.</p><div class="w-tags"><span>Website</span><span>AI chatbot</span></div></div>
+      </article>
+      <article class="w-item rv" data-cat="web">
+        <a href="#case-websites" data-tab="w4" class="w-thumb"><video data-vid="growth-bridge-network" poster="/v2/img/4626cdf9d0.jpg" autoplay muted loop playsinline preload="none" aria-label="Growth Bridge Network preview"></video><span class="ph-note">CASE STUDY ↗</span></a>
+        <div class="w-body"><div class="kicker">Business networking community</div><h3>Growth Bridge Network</h3><p>Website for a curated business networking community.</p><div class="w-tags"><span>Website</span><span>GoHighLevel</span></div></div>
+      </article>
+      <article class="w-item rv" data-cat="web">
+        <a href="#case-websites" data-tab="w5" class="w-thumb"><video data-vid="accession-grant-writing" poster="/v2/img/b79ad2e4ac.jpg" autoplay muted loop playsinline preload="none" aria-label="Accession Grant Writing preview"></video><span class="ph-note">CASE STUDY ↗</span></a>
+        <div class="w-body"><div class="kicker">Grant writing for museums</div><h3>Accession Grant Writing</h3><p>Website for a grant writing service for museums.</p><div class="w-tags"><span>Website</span><span>GoHighLevel</span></div></div>
+      </article>
+      <article class="w-item rv" data-cat="web">
+        <a href="#case-websites" data-tab="w6" class="w-thumb"><video data-vid="web-course" poster="/v2/img/ebb2ed52ad.jpg" autoplay muted loop playsinline preload="none" aria-label="Web Course preview"></video><span class="ph-note">CASE STUDY ↗</span></a>
+        <div class="w-body"><div class="kicker">Marketing course website</div><h3>Web Course</h3><p>Nine-page course and coaching website built as a GHL funnel.</p><div class="w-tags"><span>Website</span><span>Funnel</span></div></div>
+      </article>
+      <article class="w-item rv" data-cat="sys">
+        <a href="#case-systems" data-tab="s1" class="w-thumb"><img src="/v2/img/ecbe565cf0.jpg" alt="Content Ops dashboard" loading="lazy" style="object-position:left top"><span class="ph-note">CASE STUDY ↗</span></a>
+        <div class="w-body"><div class="kicker">Agency system</div><h3>Content Ops Dashboard</h3><p>Tracks every designer's output through a five-stage content pipeline.</p><div class="w-tags"><span>Dashboard</span><span>Team tracking</span></div></div>
+      </article>
+      <article class="w-item rv" data-cat="sys">
+        <a href="#case-systems" data-tab="s2" class="w-thumb"><img src="/v2/img/2505b76b75.jpg" alt="Finance tracker" loading="lazy"><span class="ph-note">CASE STUDY ↗</span></a>
+        <div class="w-body"><div class="kicker">Finance app</div><h3>Personal Finance Tracker</h3><p>Mobile-first app for accounts, bills and savings goals.</p><div class="w-tags"><span>Web app</span><span>Light &amp; dark</span></div></div>
+      </article>
+      <article class="w-item rv" data-cat="sms">
+        <a href="#a2p" class="w-thumb" style="background:#fff"><img src="/v2/img/d4a2be97f1.jpg" alt="A2P approval" loading="lazy" style="object-position:left top"><span class="ph-note">REAL APPROVAL ↗</span></a>
+        <div class="w-body"><div class="kicker">SMS compliance</div><h3>A2P 10DLC registration</h3><p>Brand, campaign and number approved end to end inside GoHighLevel.</p><div class="w-tags"><span>A2P 10DLC</span><span>SMS</span></div></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROCESS ============ -->
+<section class="process grid-paper" id="process">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <h2 class="big"><span class="thin">How I</span><br><span class="heavy">work</span></h2>
+      <p>The same six steps for every build, whether it's one landing page or a full GoHighLevel system.</p>
+    </div>
+    <div class="steps rv">
+      <div class="step"><b>01</b><h4>Discovery</h4><p>Your goals, offers and current setup.</p></div>
+      <div class="step"><b>02</b><h4>Planning</h4><p>Sitemap, funnel flow and automation map.</p></div>
+      <div class="step"><b>03</b><h4>Design</h4><p>On-brand pages built for conversion.</p></div>
+      <div class="step"><b>04</b><h4>Build &amp; automate</h4><p>Pages, CRM, workflows and integrations.</p></div>
+      <div class="step"><b>05</b><h4>Launch</h4><p>Testing, QA and go-live.</p></div>
+      <div class="step"><b>06</b><h4>Support</h4><p>Fixes, tweaks and ongoing care.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section class="exp grid-dark" id="experience">
+  <div class="wrap">
+    <div class="exp-head">
+      <div class="rv">
+        <h2 class="big"><span class="thin">What I've</span><br><span class="heavy">done</span></h2>
+        <p class="exp-intro">Agency work across many client accounts: building in GoHighLevel, keeping systems running, and handling the admin that keeps projects moving. All remote, all deadline-driven.</p>
+        <p class="exp-note">the person behind<br>the systems ↘</p>
+      </div>
+      <div class="cutout rv">
+        <div class="burst" aria-hidden="true"></div>
+        <img src="/v2/img/5b074a91c4.jpg" alt="Shiela Macapagal in a black blazer">
+        <span class="tape cut-tape">SHIE · GOHIGHLEVEL SPECIALIST</span>
+      </div>
+    </div>
+
+    <div class="job rv">
+      <div class="when">Agency support<br>20+ client accounts</div>
+      <div><h3>GoHighLevel builds</h3><div class="role">GoHighLevel Specialist</div></div>
+      <ul><li>Built and maintained websites, funnels, landing pages, forms, calendars, pipelines and workflows</li><li>Created lead nurturing, follow-up, reminder and internal notification workflows</li><li>Configured pipelines, stages, tags, custom fields, smart lists and team assignments</li><li>Set up webhooks and third-party integrations, plus sub-account setup</li></ul>
+    </div>
+    <div class="job rv">
+      <div class="when">Compliance<br>SMS &amp; texting</div>
+      <div><h3>A2P 10DLC</h3><div class="role">Registration, end to end</div></div>
+      <ul><li>Business and EIN verification, brand and campaign registration</li><li>Opt-in language, phone setup and workflow configuration</li></ul>
+    </div>
+    <div class="job rv">
+      <div class="when">AI<br>Automation</div>
+      <div><h3>AI-assisted work</h3><div class="role">Faster builds, cleaner systems</div></div>
+      <ul><li>AI tools for workflow planning, troubleshooting and process documentation</li><li>Content creation and process improvement with AI</li></ul>
+    </div>
+    <div class="job rv">
+      <div class="when">Operations<br>Client admin</div>
+      <div><h3>Client &amp; content ops</h3><div class="role">Admin · Social media content</div></div>
+      <ul><li>Client communications, organization and administrative coordination</li><li>Scheduled social media content and managed client folders</li><li>Testing workflows, forms, funnels and integrations before and after launch</li></ul>
+    </div>
+
+    <div class="tools rv">
+      <span>GoHighLevel</span><span>ChatGPT</span><span>Claude</span><span>Gemini AI</span><span>Webhooks</span><span>REST API</span><span>Zapier</span><span>Make</span><span>Stripe</span><span>Twilio</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Canva</span><span>Figma</span><span>Google Sheets</span><span>Asana</span><span>Metricool</span><span>ManyChat</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY + FAQ ============ -->
+<section class="why-sec grid-paper" id="faq">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <h2 class="big"><span class="thin">Why work</span><br><span class="heavy">with me</span></h2>
+      <p>Systems that move a lead from first click to paid client, without you chasing every step.</p>
+    </div>
+    <div class="why rv">
+      <div><b>01</b><h4>Business-first thinking</h4><p>Every build starts with how it moves a lead through your business, not just how it looks.</p></div>
+      <div><b>02</b><h4>End-to-end systems</h4><p>Website, funnel, CRM and automation designed to work together, not as disconnected pieces.</p></div>
+      <div><b>03</b><h4>Compliance handled</h4><p>A2P 10DLC and SMS compliance built in, so your outreach stays deliverable and approved.</p></div>
+      <div><b>04</b><h4>Reliable support</h4><p>Clear communication and support after launch, so your systems keep running smoothly.</p></div>
+    </div>
+
+    <div class="faq">
+      <div class="faq-side rv">
+        <h2 class="big"><span class="heavy">FAQ</span></h2>
+        <p>Still curious? Book a quick call and we'll walk through your setup together.</p>
+        <a class="btn" href="https://calendar.app.google/uGboPxZ85sW2tMBa9" target="_blank" rel="noopener">Ask me directly ↗</a>
+      </div>
+      <div class="faq-list rv">
+        <div class="faq-item"><button class="faq-q" aria-expanded="false"><span>What is GoHighLevel and why use it?</span><span class="pm">+</span></button><div class="faq-a"><div><p>GoHighLevel is an all-in-one platform for websites, funnels, CRM, and marketing automation — so your business runs on one connected system instead of ten disconnected tools.</p></div></div></div>
+        <div class="faq-item"><button class="faq-q" aria-expanded="false"><span>How long does a typical build take?</span><span class="pm">+</span></button><div class="faq-a"><div><p>Most website and funnel builds take 1–3 weeks depending on scope. Full systems with automation and A2P setup can take 3–5 weeks.</p></div></div></div>
+        <div class="faq-item"><button class="faq-q" aria-expanded="false"><span>Do you help with A2P 10DLC registration?</span><span class="pm">+</span></button><div class="faq-a"><div><p>Yes — I handle end-to-end brand and campaign registration, EIN verification, and SMS compliance setup so your texting stays approved and deliverable.</p></div></div></div>
+        <div class="faq-item"><button class="faq-q" aria-expanded="false"><span>Do you offer ongoing support after launch?</span><span class="pm">+</span></button><div class="faq-a"><div><p>Yes — every project includes a support window after launch, with maintenance retainers available for ongoing management.</p></div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee paper" aria-hidden="true"><div class="track">
+  <span>Let's build your system</span><span>Available for projects</span><span>Let's build your system</span><span>Available for projects</span>
+  <span>Let's build your system</span><span>Available for projects</span><span>Let's build your system</span><span>Available for projects</span>
+</div></div>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact grid-paper" id="contact">
+  <div class="wrap">
+    <h2 class="rv"><span class="thin">Let's build</span><span class="heavy">something amazing.</span></h2>
+    <div class="center rv"><span class="tape dark">Open to GoHighLevel &amp; AI automation projects</span></div>
+    <div class="contact-row rv">
+      <a class="btn" href="https://calendar.app.google/uGboPxZ85sW2tMBa9" target="_blank" rel="noopener">Book a call ↗</a>
+      <a class="btn ghost" style="color:var(--ink);border-color:var(--ink)" href="mailto:shielamhaymacapagal@gmail.com?subject=GoHighLevel%20project%20inquiry">Email me ↗</a>
+      <a class="btn ghost" style="color:var(--ink);border-color:var(--ink)" href="https://linkedin.com/in/shiela-macapagal-2413782b8" target="_blank" rel="noopener">LinkedIn ↗</a>
+    </div>
+    <div class="contact-meta rv">
+      <div><small>Email</small><p><a href="mailto:shielamhaymacapagal@gmail.com">shielamhaymacapagal@gmail.com</a></p></div>
+      <div><small>Book a call</small><p><a href="https://calendar.app.google/uGboPxZ85sW2tMBa9" target="_blank" rel="noopener">Pick a time →</a></p></div>
+      <div><small>Based in</small><p>Malolos City, Bulacan, PH<br>Working US/global hours</p></div>
+      <div><small>LinkedIn</small><p><a href="https://linkedin.com/in/shiela-macapagal-2413782b8" target="_blank" rel="noopener">Connect with me →</a></p></div>
+    </div>
+  </div>
+</section>
+
+<div class="lb" id="lb" aria-hidden="true"><button class="lb-x" aria-label="Close">×</button><div class="lb-in"><img alt=""></div></div>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Shiela Mhay Macapagal · GoHighLevel Specialist</span>
+    <span>Build. Automate. Scale.</span>
+    <a href="#top">Back to top ↑</a>
+  </div>
+</footer>
+
+
+<script>
+(function(){
+  const nav=document.getElementById('nav');
+  const onScroll=()=>nav.classList.toggle('scrolled',window.scrollY>40);
+  onScroll();window.addEventListener('scroll',onScroll,{passive:true});
+
+  const burger=document.getElementById('burger'),links=document.getElementById('navLinks');
+  burger.addEventListener('click',()=>links.classList.toggle('open'));
+  links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>links.classList.remove('open')));
+
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+  document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+
+  // work filters
+  const btns=document.querySelectorAll('#filters button'),items=document.querySelectorAll('.w-item');
+  btns.forEach(b=>b.addEventListener('click',()=>{
+    btns.forEach(x=>x.classList.remove('on'));b.classList.add('on');
+    const f=b.dataset.f;
+    items.forEach(it=>{const show=f==='all'||it.dataset.cat.split(' ').includes(f);it.classList.toggle('hide',!show);if(show)it.classList.add('in')});
+  }));
+
+
+  // shared video sources: each recording is stored once, then used by its tab and its work tile
+  const VS=window.__VID||{};
+  const urls={};
+  Object.keys(VS).forEach(k=>{const b=atob(VS[k]);const u=new Uint8Array(b.length);for(let i=0;i<b.length;i++)u[i]=b.charCodeAt(i);urls[k]=URL.createObjectURL(new Blob([u],{type:'video/mp4'}))});
+  const vids=[...document.querySelectorAll('video[data-vid]')];
+  vids.forEach(v=>{const k=v.dataset.vid;v.src=urls[k]||('/v2/video/'+k+'.mp4');v.muted=true;v.loop=true;v.playsInline=true});
+  const vio=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.play().catch(()=>{})}else{e.target.pause()}}),{threshold:.15});
+  vids.forEach(v=>vio.observe(v));
+  // safety net: keep any on-screen video playing (covers smooth-scroll edge cases)
+  setInterval(()=>{vids.forEach(v=>{if(!v.paused||!v.offsetParent)return;const r=v.getBoundingClientRect();if(r.bottom>0&&r.top<innerHeight)v.play().catch(()=>{})})},1200);
+  // case-study tabs (play only the visible video)
+  function openTab(t){
+    const sec=t.closest('.case');
+    sec.querySelectorAll('.dtab').forEach(x=>x.classList.toggle('on',x===t));
+    sec.querySelectorAll('.design').forEach(d=>{
+      const on=d.id===t.dataset.d; d.classList.toggle('on',on);
+      d.querySelectorAll('video').forEach(v=>{if(on){v.play().catch(()=>{})}else{v.pause()}});
+    });
+  }
+  document.querySelectorAll('.dtab').forEach(t=>t.addEventListener('click',()=>openTab(t)));
+  // work cards jump to the right tab
+  document.querySelectorAll('[data-tab]').forEach(a=>a.addEventListener('click',()=>{
+    const t=document.querySelector('.dtab[data-d="'+a.dataset.tab+'"]'); if(t) openTab(t);
+  }));
+
+  // FAQ
+  document.querySelectorAll('.faq-q').forEach(q=>q.addEventListener('click',()=>{
+    const item=q.parentElement,open=!item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(i=>{i.classList.remove('open');i.querySelector('.faq-q').setAttribute('aria-expanded','false')});
+    if(open){item.classList.add('open');q.setAttribute('aria-expanded','true')}
+  }));
+
+  // lightbox
+  const lb=document.getElementById('lb'),lbImg=lb.querySelector('img');
+  document.querySelectorAll('[data-full]').forEach(el=>el.addEventListener('click',()=>{lbImg.src=el.dataset.full||(el.querySelector('img')||{}).src;lbImg.alt=(el.querySelector('img')||{}).alt||'';lb.classList.add('open');lb.setAttribute('aria-hidden','false')}));
+  const closeLb=()=>{lb.classList.remove('open');lb.setAttribute('aria-hidden','true')};
+  lb.addEventListener('click',e=>{if(e.target===lb||e.target.classList.contains('lb-x'))closeLb()});
+  document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLb()});
+
+  // hero parallax
+  const reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const floats=document.querySelectorAll('.float');
+  const base=[...floats].map(f=>getComputedStyle(f).transform);
+  if(!reduce&&window.matchMedia('(pointer:fine)').matches){
+    document.querySelector('.hero').addEventListener('mousemove',e=>{
+      const x=(e.clientX/innerWidth-.5),y=(e.clientY/innerHeight-.5);
+      floats.forEach((f,i)=>{const d=+f.dataset.depth||10;f.style.transform=`translate(${x*d}px,${y*d}px) ${base[i]==='none'?'':base[i]}`});
+    });
+  }
+})();
+</script>
+</body>
+</html>
