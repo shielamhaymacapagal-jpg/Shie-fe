@@ -1,19 +1,7 @@
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
-import { Space_Grotesk, Inter } from 'next/font/google'
 import './globals.css'
 
-const spaceGrotesk = Space_Grotesk({
-subsets: ['latin'],
-weight: ['400', '500', '600', '700'],
-variable: '--font-space-grotesk',
-})
-
-const inter = Inter({
-subsets: ['latin'],
-weight: ['400', '500', '600', '700'],
-variable: '--font-inter',
-})
 
 export const metadata: Metadata = {
 title: 'SHL | Shiela Macapagal — GoHighLevel Expert',
@@ -33,7 +21,13 @@ children,
 children: React.ReactNode
 }>) {
 return (
-<html lang="en" className={`${spaceGrotesk.variable} ${inter.variable} bg-background`}>
+<html lang="en" className="bg-background">
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>{`:root{--font-space-grotesk:'Space Grotesk',sans-serif;--font-inter:'Inter',sans-serif}`}</style>
+</head>
 <body className="antialiased font-sans">
 {children}
 {process.env.NODE_ENV === 'production' && <Analytics />}
