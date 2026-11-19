@@ -399,6 +399,15 @@ nav.scrolled{background:rgba(22,22,22,.86);backdrop-filter:blur(10px);-webkit-ba
 .contact-meta small{font-family:var(--mono);font-size:11px;letter-spacing:1px;color:var(--signal);text-transform:uppercase}
 .contact-meta p{font-size:16px;margin-top:8px;word-break:break-word;line-height:1.5}
 .contact-meta a:hover{color:var(--signal)}
+/* "Email me" button → highlight the Email tile */
+.contact-meta div{position:relative;transition:background-color .3s,color .3s}
+.contact-meta div.flash{animation:emailFlash 2.4s ease-out}
+.contact-meta div.flash small,.contact-meta div.flash a{animation:emailFlashText 2.4s ease-out}
+.contact-meta div.flash:after{content:"";position:absolute;inset:-2px;border:3px solid var(--signal);pointer-events:none;animation:emailRing 2.4s ease-out forwards}
+@keyframes emailFlash{0%{background:transparent}12%,55%{background:var(--signal)}100%{background:transparent}}
+@keyframes emailFlashText{0%{color:inherit}12%,55%{color:#fff}100%{color:inherit}}
+@keyframes emailRing{0%{opacity:0;transform:scale(1)}12%{opacity:1;transform:scale(1)}40%{opacity:1;transform:scale(1.03)}100%{opacity:0;transform:scale(1.06)}}
+@media (prefers-reduced-motion:reduce){.contact-meta div.flash,.contact-meta div.flash small,.contact-meta div.flash a,.contact-meta div.flash:after{animation:none}.contact-meta div.flash{outline:3px solid var(--signal)}}
 footer{background:var(--ink);color:var(--mute);padding:28px 0;font-family:var(--mono);font-size:12px}
 footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 footer a:hover{color:var(--signal)}
@@ -1112,6 +1121,13 @@ footer a:hover{color:var(--signal)}
   burger.addEventListener('click',()=>links.classList.toggle('open'));
   links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>links.classList.remove('open')));
 
+  // "Email me" button: keep the email link working and highlight the Email tile
+  (()=>{const btn=[...document.querySelectorAll('.contact-row a[href^="mailto:"]')][0];
+    const tile=document.querySelector('.contact-meta a[href^="mailto:"]')?.closest('.contact-meta > div');
+    if(!btn||!tile)return;let tm;
+    btn.addEventListener('click',()=>{tile.classList.remove('flash');void tile.offsetWidth;tile.classList.add('flash');
+      const r=tile.getBoundingClientRect();if(r.top<0||r.bottom>innerHeight)tile.scrollIntoView({behavior:'smooth',block:'center'});
+      clearTimeout(tm);tm=setTimeout(()=>tile.classList.remove('flash'),2500)});})();
   // webhook flow diagram: run its animation only while it is on screen
   document.querySelectorAll('.tree').forEach(t=>new IntersectionObserver(es=>es.forEach(e=>t.classList.toggle('live',e.isIntersecting)),{threshold:.3}).observe(t));
   const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
