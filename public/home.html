@@ -399,6 +399,14 @@ nav.scrolled{background:rgba(22,22,22,.86);backdrop-filter:blur(10px);-webkit-ba
 .contact-meta small{font-family:var(--mono);font-size:11px;letter-spacing:1px;color:var(--signal);text-transform:uppercase}
 .contact-meta p{font-size:16px;margin-top:8px;word-break:break-word;line-height:1.5}
 .contact-meta a:hover{color:var(--signal)}
+/* contact tiles: hover highlight */
+.contact-meta div{cursor:default}
+.contact-meta div:has(a){cursor:pointer}
+.contact-meta div:hover{background:#E5432D;color:#fff}
+.contact-meta div:hover small,.contact-meta div:hover a,.contact-meta div:hover a:hover{color:#fff}
+.contact-meta small{transition:color .3s}
+.contact-meta div:hover p{transform:translateX(4px)}
+.contact-meta p{transition:transform .3s}
 /* "Email me" button → highlight the Email tile */
 .contact-meta div{position:relative;transition:background-color .3s,color .3s}
 .contact-meta div.flash{animation:emailFlash 2.4s ease-out}
