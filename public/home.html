@@ -226,6 +226,32 @@ nav.scrolled{background:rgba(22,22,22,.86);backdrop-filter:blur(10px);-webkit-ba
 .tree .kids:before{content:"";position:absolute;top:0;left:12%;right:12%;height:2px;background:var(--paper)}
 .tree .kids .node{position:relative}
 .tree .kids .node:before{content:"";position:absolute;top:-20px;left:50%;width:2px;height:18px;background:var(--paper)}
+/* 05 webhook — animated data flow (adds motion only; layout unchanged) */
+.tree .stem{position:relative;overflow:visible}
+.tree .stem:after,.tree .kids .node:after{content:"";position:absolute;left:50%;width:8px;height:8px;margin-left:-4px;border-radius:50%;background:var(--signal);box-shadow:0 0 10px 2px rgba(229,67,45,.75);opacity:0;pointer-events:none}
+.tree .stem:after{top:-4px}
+.tree .kids .node:after{top:-24px;margin-left:-3px}
+.tree .kids{--bar:0}
+.tree .kids:after{content:"";position:absolute;top:0;left:12%;right:12%;height:2px;background:var(--signal);box-shadow:0 0 8px rgba(229,67,45,.8);transform:scaleX(0);opacity:0;pointer-events:none}
+.tree.live .node.p{animation:wfTrigger 4.2s ease-out infinite}
+.tree.live .stem:nth-child(2):after{animation:wfDrop 4.2s linear infinite}
+.tree.live .node:nth-child(3){animation:wfHit 4.2s ease-out infinite;animation-delay:.55s}
+.tree.live .stem:nth-child(4):after{animation:wfDrop 4.2s linear infinite;animation-delay:1.05s}
+.tree.live .kids:after{animation:wfBar 4.2s ease-out infinite;animation-delay:1.5s}
+.tree.live .kids .node:after{animation:wfKidDrop 4.2s linear infinite;animation-delay:2s}
+.tree.live .kids .node{animation:wfHit 4.2s ease-out infinite;animation-delay:2.4s}
+.tree.live .kids .node:nth-child(2),.tree.live .kids .node:nth-child(2):after{animation-delay:2.1s}
+.tree.live .kids .node:nth-child(2){animation-delay:2.5s}
+.tree.live .kids .node:nth-child(3):after{animation-delay:2.2s}
+.tree.live .kids .node:nth-child(3){animation-delay:2.6s}
+.tree.live .kids .node:nth-child(4):after{animation-delay:2.3s}
+.tree.live .kids .node:nth-child(4){animation-delay:2.7s}
+@keyframes wfTrigger{0%{box-shadow:0 0 0 0 rgba(229,67,45,.7)}14%{box-shadow:0 0 0 10px rgba(229,67,45,0)}100%{box-shadow:0 0 0 0 rgba(229,67,45,0)}}
+@keyframes wfDrop{0%{top:-4px;opacity:0}2%{opacity:1}11%{top:14px;opacity:1}13%,100%{top:14px;opacity:0}}
+@keyframes wfKidDrop{0%{top:-24px;opacity:0}2%{opacity:1}10%{top:-6px;opacity:1}12%,100%{top:-6px;opacity:0}}
+@keyframes wfHit{0%,100%{border-color:var(--paper);box-shadow:none}4%{border-color:var(--signal);box-shadow:0 0 14px rgba(229,67,45,.55)}18%{border-color:var(--paper);box-shadow:none}}
+@keyframes wfBar{0%{transform:scaleX(0);opacity:1}10%{transform:scaleX(1);opacity:1}18%,100%{transform:scaleX(1);opacity:0}}
+@media (prefers-reduced-motion:reduce){.tree.live *,.tree.live *:after{animation:none!important}}
 
 /* 06 A2P */
 .ab-real{background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 20px 44px rgba(0,0,0,.16);transform:rotate(-1deg);cursor:zoom-in;transition:transform .35s}
@@ -1086,6 +1112,8 @@ footer a:hover{color:var(--signal)}
   burger.addEventListener('click',()=>links.classList.toggle('open'));
   links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>links.classList.remove('open')));
 
+  // webhook flow diagram: run its animation only while it is on screen
+  document.querySelectorAll('.tree').forEach(t=>new IntersectionObserver(es=>es.forEach(e=>t.classList.toggle('live',e.isIntersecting)),{threshold:.3}).observe(t));
   const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
   document.querySelectorAll('.rv').forEach(el=>io.observe(el));
 
